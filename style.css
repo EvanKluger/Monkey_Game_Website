@@ -5,9 +5,8 @@
 }
 
 .background {
-    background-color: #4b4c4d;
-    height: 100vh;
-    padding-top: 1px;
+    background-color: grey;
+    height: 100%;
 }
 
 .title {
@@ -24,17 +23,41 @@
     margin-top: 5%;
 }
 
-.background-image {
-    background-color: #add8e6;
-    align-items: center;
+
+
+.Jungle{
+    margin-top: 10px;
+    background-color: rgb(204, 255, 255);
     justify-content: center;
-    padding-top: 100px;
-    height: 50vh;
-    width: 50vw;
+    align-items: center;
+    margin-left: 15%;
+    height: 70vh;
+    width: 70vw;
+    z-index: 1;
+    }
+
+
+.Monkey{
+    position: absolute;
+    top: 800px;
+    left: 700px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
 }
-img{
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    width: 50vw;
+.Banana{
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    height: 70px;
+    width: 70px;
+    z-index: 2;
+}
+.Trash{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    height: 70px;
+    width: 70px;
+    z-index: 2;
 }
