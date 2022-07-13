@@ -4,10 +4,6 @@ let monkey = document.querySelector('.Monkey');
 let moveBy = 10;
 var counter = 0;
 
-
-
-
-
 window.addEventListener('load', () => {
     monkey.style.position = 'absolute';
     monkey.style.left = 700;
@@ -68,3 +64,7 @@ var game = function() {
         document.getElementById("scoreSpan").innerHTML = counter;
     }
 }
+
+fall_banana()
+fall_trash()
+game()
