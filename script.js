@@ -4,6 +4,10 @@ let monkey = document.querySelector('.Monkey');
 let moveBy = 10;
 var counter = 0;
 
+
+
+
+
 window.addEventListener('load', () => {
     monkey.style.position = 'absolute';
     monkey.style.left = 700;
@@ -12,13 +16,13 @@ window.addEventListener('load', () => {
 
 window.addEventListener('load', () => {
     banana.style.position = 'absolute';
-    banana.style.left = 0;
+    banana.style.left = 400;
     banana.style.top = 300;
 });
 
 window.addEventListener('load', () => {
     trash.style.position = 'absolute';
-    trash.style.left = 0;
+    trash.style.left = 700;
     trash.style.top = 300;
 });
 
