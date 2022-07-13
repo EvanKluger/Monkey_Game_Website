@@ -64,6 +64,3 @@ var game = function() {
         document.getElementById("scoreSpan").innerHTML = counter;
     }
 }
-
-fall_banana()
-fall_trash()
