@@ -46,9 +46,6 @@
     z-index: 2;
 }
 
-
-
-
 .Banana{
     position: absolute;
     top: 300px;
@@ -56,7 +53,6 @@
     height: 70px;
     width: 70px;
     z-index: 2;
-    animation: fall_banana infinite;
 }
 
 .Trash{
@@ -66,5 +62,4 @@
     height: 70px;
     width: 70px;
     z-index: 2;
-    animation: fall_trash infinite;
 }

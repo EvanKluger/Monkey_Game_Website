@@ -67,4 +67,3 @@ var game = function() {
 
 fall_banana()
 fall_trash()
-game()
