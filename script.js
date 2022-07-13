@@ -1,7 +1,25 @@
-var monkey = document.getElementById("monkey");
 var banana = document.getElementById("banana");
 var trash = document.getElementById("trash");
 var counter = 0;
+
+let monkey = document.querySelector('.Monkey');
+let moveBy = 10;
+window.addEventListener('load', () => {
+    monkey.style.position = 'absolute';
+    moneky.style.left = 0;
+    moneky.style.top = 0;
+});
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'ArrowLeft':
+            circle.style.monkey = parseInt(monkey.style.left) - moveBy + 'px';
+            break;
+        case 'ArrowRight':
+            circle.style.monkey = parseInt(circle.style.left) + moveBy + 'px';
+            break;
+    }
+});
+
 
 function side_move(){
     if(monkey.classList == "animate"){return}
