@@ -6,8 +6,8 @@ var counter = 0;
 
 window.addEventListener('load', () => {
     monkey.style.position = 'absolute';
-    monkey.style.left = 0;
-    monkey.style.top = 0;
+    monkey.style.left = 700;
+    monkey.style.top = 800;
 });
 
 window.addEventListener('load', () => {
@@ -48,19 +48,17 @@ function fall_trash(){
 }
 
 var game = function() {
-    let monkey_body = parseInt(window.getComputedStyle(monkey).getPropertyValue("Monkey Body"));
-    let trash_body = parseInt(window.getComputedStyle(banana).getPropertyValue("Trash Body"));
-    let banana_body = parseInt(window.getComputedStyle(trash).getPropertyValue("Banana Body"));
-    if(monkey_body == trash_body){
-        alert("Game Over. score: "+Math.floor(counter/100));
+    
+    if((trash.style.left <= monkey.style.left <=  trash.style.left + 70) && (trash.style.top <= monkey.style.top <=  trash.style.top + 70)){
+        alert("Game Over. score: "+ counter);
         counter=0;
     }
-    else if(monkey_body == banana_body){
+    else if((banana.style.left <= monkey.style.left <= banana.style.left + 70) && (banana.style.top <= monkey.style.top <= banana.style.top + 70)){
         counter++;
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        document.getElementById("scoreSpan").innerHTML = counter;
     }
     
     else{
-        document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
+        document.getElementById("scoreSpan").innerHTML = counter;
     }
 }
