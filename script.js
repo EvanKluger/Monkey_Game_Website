@@ -12,22 +12,14 @@ window.addEventListener('load', () => {
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            circle.style.monkey = parseInt(monkey.style.left) - moveBy + 'px';
+            monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
         case 'ArrowRight':
-            circle.style.monkey = parseInt(circle.style.left) + moveBy + 'px';
+            monkey.style.left = parseInt(circle.style.left) + moveBy + 'px';
             break;
     }
 });
 
-
-function side_move(){
-    if(monkey.classList == "animate"){return}
-    monkey.classList.add("animate");
-    setTimeout(function(){
-        character.classList.remove("animate");
-    },300);
-}
 
 function fall_banana(){
     if(banana.classList == "animate"){return}
@@ -48,8 +40,8 @@ function fall_trash(){
 
 var game = function() {
     let monkey_body = parseInt(window.getComputedStyle(monkey).getPropertyValue("Monkey Body"));
-    let trash_body = parseInt(window.getComputedStyle(block).getPropertyValue("Trash Body"));
-    let banana_body = parseInt(window.getComputedStyle(block).getPropertyValue("Banana Body"));
+    let trash_body = parseInt(window.getComputedStyle(banana).getPropertyValue("Trash Body"));
+    let banana_body = parseInt(window.getComputedStyle(trash).getPropertyValue("Banana Body"));
     if(monkey_body == trash_body){
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
