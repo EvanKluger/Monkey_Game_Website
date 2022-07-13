@@ -37,7 +37,7 @@
     }
 
 
-.monkey{
+.Monkey{
     position: absolute;
     top: 800px;
     left: 700px;
@@ -66,5 +66,5 @@
     height: 70px;
     width: 70px;
     z-index: 2;
-    animation: fall_banana 3s down;
+    animation: fall_trash 3s down;
 }

@@ -1,42 +1,51 @@
-var banana = document.getElementById("banana");
-var trash = document.getElementById("trash");
-var counter = 0;
-
+let banana = document.querySelector('.Banana');
+let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
 let moveBy = 10;
+var counter = 0;
+
 window.addEventListener('load', () => {
     monkey.style.position = 'absolute';
-    moneky.style.left = 0;
-    moneky.style.top = 0;
+    monkey.style.left = 0;
+    monkey.style.top = 0;
 });
+
+window.addEventListener('load', () => {
+    banana.style.position = 'absolute';
+    banana.style.left = 0;
+    banana.style.top = 300;
+});
+
+window.addEventListener('load', () => {
+    trash.style.position = 'absolute';
+    trash.style.left = 0;
+    trash.style.top = 300;
+});
+
+
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
         case 'ArrowRight':
-            monkey.style.left = parseInt(circle.style.left) + moveBy + 'px';
+            monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
     }
 });
 
 
 function fall_banana(){
-    if(banana.classList == "animate"){return}
-    banana.classList.add("animate");
-    setTimeout(function(){
-        character.classList.remove("animate");
-    },300);
+    while(banana.style.top < 900){
+        banana.style.top = parseInt(banana.style.top) + moveBy + 'px'
+    }
 }
 
 function fall_trash(){
-    if(trash.classList == "animate"){return}
-    trash.classList.add("animate");
-    setTimeout(function(){
-        character.classList.remove("animate");
-    },300);
+    while(trash.style.top < 900){
+        trash.style.top = parseInt(trash.style.top) + moveBy + 'px'
+    }
 }
-
 
 var game = function() {
     let monkey_body = parseInt(window.getComputedStyle(monkey).getPropertyValue("Monkey Body"));
