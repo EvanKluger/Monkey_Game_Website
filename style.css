@@ -37,7 +37,7 @@
     }
 
 
-.Monkey{
+#monkey{
     position: absolute;
     top: 800px;
     left: 700px;
@@ -45,7 +45,17 @@
     width: 100px;
     z-index: 2;
 }
-.Banana{
+.animate{
+    animation: side_move 1s linear;
+}
+@keyframes side_move{
+    0%{left: 300px;}
+    100%{top: 310px;}
+}
+
+
+
+#banana{
     position: absolute;
     top: 300px;
     left: 800px;
@@ -53,11 +63,31 @@
     width: 70px;
     z-index: 2;
 }
-.Trash{
+.animate{
+    animation: fall_banana 1s linear;
+}
+@keyframes fall_banana{
+    0%{top: 300px;}
+    30%{top: 500px;}
+    70%{top: 700px;}
+    100%{top: 1000px;}
+}
+
+
+#trash{
     position: absolute;
     top: 300px;
     left: 400px;
     height: 70px;
     width: 70px;
     z-index: 2;
+}
+.animate{
+    animation: fall_trash 1s linear;
+}
+@keyframes fall_trash{
+    0%{top: 300px;}
+    30%{top: 500px;}
+    70%{top: 700px;}
+    100%{top: 1000px;}
 }
