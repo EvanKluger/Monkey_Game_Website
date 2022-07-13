@@ -39,12 +39,14 @@ function fall_banana(){
     while(banana.style.top < 900){
         banana.style.top = parseInt(banana.style.top) + moveBy + 'px'
     }
+    banana.style.top = parseInt(300) + 'px'
 }
 
 function fall_trash(){
     while(trash.style.top < 900){
         trash.style.top = parseInt(trash.style.top) + moveBy + 'px'
     }
+    trash.style.top = parseInt(300) + 'px'
 }
 
 var game = function() {

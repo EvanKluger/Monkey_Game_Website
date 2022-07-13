@@ -56,7 +56,7 @@
     height: 70px;
     width: 70px;
     z-index: 2;
-    animation: fall_banana 3s down;
+    animation: fall_banana infinite;
 }
 
 .Trash{
@@ -66,5 +66,5 @@
     height: 70px;
     width: 70px;
     z-index: 2;
-    animation: fall_trash 3s down;
+    animation: fall_trash infinite;
 }
