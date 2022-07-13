@@ -1,7 +1,7 @@
 let banana = document.querySelector('.Banana');
 let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
-let moveBy = 10;
+let moveBy = 20;
 var counter = 0;
 
 window.addEventListener('load', () => {
