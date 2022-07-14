@@ -7,6 +7,7 @@ let counter = 0;
 
 function random_x() {
     let x = Math.floor(Math.random() * 701) + 300;
+    return x
 }
 
 
@@ -30,10 +31,10 @@ var trash_move_left = trash.offsetLeft
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            monkey.style.left = monkey.style.left - moveBy + 'px';
+            monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
         case 'ArrowRight':
-            monkey.style.left = monkey.style.left + moveBy + 'px';
+            monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
     }
 });
@@ -47,12 +48,14 @@ function banana_movement(){
     banana_int_top = 300
 }
 
+
 function trash_movement(){
     while(trash.style.top < 900){
         trash_move_top = trash_move_top + moveBy;
         trash.style.top = trash_move_top + "px";
     }
     trash.style.left = random_x() + 'px';
+    trash_int_top = 300
 }
 
 
@@ -73,6 +76,8 @@ var game = function() {
     }
 }
 */
-
-banana_movement()
-trash_movement()
+play = 'yes'
+while(play == 'yes'){
+    banana_movement()
+    trash_movement()
+}
