@@ -50,7 +50,7 @@ function banana_movement(){
 
 
 function trash_movement(){
-    while(trash.style.top < 900){
+    while(trash_int_top < 900){
         trash_move_top = trash_move_top + moveBy;
         trash.style.top = trash_move_top + "px";
     }
