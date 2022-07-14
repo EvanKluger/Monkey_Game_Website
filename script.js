@@ -20,11 +20,6 @@ window.addEventListener('load', () => {
     banana.style.position = 'absolute';
     banana.style.left = 400;
     banana.style.top = 300;
-    while(banana.style.top < 900){
-        banana.style.top = parseInt(banana.style.top) + moveBy + 'px'
-    }
-    banana.style.top = parseInt(300) + 'px'
-    banana.style.left = random_x()
 });
 
 window.addEventListener('load', () => {
@@ -79,3 +74,4 @@ var game = function() {
     }
 }
 
+banana_movement()
