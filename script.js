@@ -39,7 +39,7 @@ window.addEventListener('keyup', (e) => {
 });
 
 function banana_movement(){
-    while(banana.style.top < 900){
+    while(banana.trash_move_top < 900){
         banana_move_top = banana_move_top + moveBy;
         banana.style.top = banana_move_top + "px"
     }
