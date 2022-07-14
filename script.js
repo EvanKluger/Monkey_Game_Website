@@ -15,7 +15,8 @@ monkey.style.top = '800px';
 
 banana.style.left = '800px';
 banana.style.top = '300px';
-
+banana_int_top = 300;
+banana_int_left = 800;
 
 trash.style.left = '400px';
 trash.style.top = '300px';
@@ -29,29 +30,29 @@ var trash_move_left = trash.offsetLeft
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
+            monkey.style.left = monkey.style.left - moveBy + 'px';
             break;
         case 'ArrowRight':
- 
-            monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
+            monkey.style.left = monkey.style.left + moveBy + 'px';
             break;
     }
 });
 
 function banana_movement(){
-    while(banana.trash_move_top < 900){
-        banana_move_top = banana_move_top + moveBy;
-        banana.style.top = parseInt(banana_move_top) + "px";
+    while(banana_int_top < 900){
+        banana_int_top = banana_int_top + moveBy;
+        banana.style.top = banana_int_top + "px";
     }
     banana.style.left = parseInt(random_x()) + 'px'
+    banana_int_top = 300
 }
 
 function trash_movement(){
     while(trash.style.top < 900){
         trash_move_top = trash_move_top + moveBy;
-        trash.style.top = parseInt(trash_move_top) + "px";
+        trash.style.top = trash_move_top + "px";
     }
-    trash.style.left = parseInt(random_x()) + 'px';
+    trash.style.left = random_x() + 'px';
 }
 
 
