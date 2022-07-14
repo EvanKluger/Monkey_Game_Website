@@ -44,7 +44,7 @@ function banana_movement(){
     while(banana_int_top < 900){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
-        setTimeout(alert(''),100)
+        setTimeout(alert(''),1000)
     }
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
