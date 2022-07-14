@@ -32,9 +32,7 @@ window.addEventListener('load', () => {
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(monkey.style.left > 100){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
-            }
             break;
         case 'ArrowRight':
             if(monkey.style.left < 900){
