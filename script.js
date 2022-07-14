@@ -4,6 +4,12 @@ let monkey = document.querySelector('.Monkey');
 let moveBy = 20;
 let counter = 0;
 
+
+function random_x() {
+    let x = Math.floor(Math.random() * 701) + 300;
+}
+
+
 window.addEventListener('load', () => {
     monkey.style.position = 'absolute';
     monkey.style.left = 700;
@@ -39,18 +45,20 @@ window.addEventListener('keyup', (e) => {
 });
 
 
-function fall_banana(){
+function banana_movement(){
     while(banana.style.top < 900){
         banana.style.top = parseInt(banana.style.top) + moveBy + 'px'
     }
     banana.style.top = parseInt(300) + 'px'
+    banana.style.left = random_x()
 }
 
-function fall_trash(){
+function trash_movement(){
     while(trash.style.top < 900){
         trash.style.top = parseInt(trash.style.top) + moveBy + 'px'
     }
     trash.style.top = parseInt(300) + 'px'
+    trash.style.left = random_x()
 }
 
 var game = function() {
@@ -68,3 +76,8 @@ var game = function() {
         document.getElementById("scoreSpan").innerHTML = counter;
     }
 }
+
+window.addEventListener('load', () => {
+    trash_movement()
+    banana_movement()
+});
