@@ -43,7 +43,7 @@ function banana_movement(){
         banana_int_top = banana_int_top + moveBy;
         banana.style.top = banana_int_top + "px";
     }
-    banana.style.left = parseInt(random_x()) + 'px'
+    banana.style.left = random_x() + 'px'
     banana_int_top = 300
 }
 
