@@ -10,23 +10,15 @@ function random_x() {
 }
 
 
-window.addEventListener('load', () => {
-    monkey.style.position = 'absolute';
-    monkey.style.left = 700;
-    monkey.style.top = 800;
-});
+monkey.style.left = 700;
+monkey.style.top = 800;
 
-window.addEventListener('load', () => {
-    banana.style.position = 'absolute';
-    banana.style.left = 800;
-    banana.style.top = 300;
-});
+banana.style.left = 800;
+banana.style.top = 300;
 
-window.addEventListener('load', () => {
-    trash.style.position = 'absolute';
-    trash.style.left = 400;
-    trash.style.top = 300;
-});
+
+trash.style.left = 400;
+trash.style.top = 300;
 
 var banana_move_top = banana.offsetTop
 var banana_move_left = banana.offsetLeft
@@ -63,7 +55,7 @@ function trash_movement(){
 }
 
 
-
+/*
 var game = function() {
     
     if((trash.style.left <= monkey.style.left <=  trash.style.left + 70) && (trash.style.top <= monkey.style.top <=  trash.style.top + 70)){
@@ -79,6 +71,7 @@ var game = function() {
         document.getElementById("scoreSpan").innerHTML = counter;
     }
 }
+*/
 
 banana_movement()
 trash_movement()
