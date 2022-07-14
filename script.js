@@ -1,8 +1,9 @@
 let banana = document.querySelector('.Banana');
 let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
-let moveBy = 1;
+let moveBy = 20;
 let counter = 0;
+let step = 1;
 
 
 function random_x() {
@@ -41,7 +42,7 @@ window.addEventListener('keyup', (e) => {
 
 function banana_movement(){
     while(banana_int_top < 900){
-        banana_int_top = banana_int_top + moveBy;
+        banana_int_top = banana_int_top + step;
         banana.style.top = banana_int_top + "px";
     }
     banana.style.left = random_x() + 'px'
@@ -52,7 +53,7 @@ function banana_movement(){
 
 function trash_movement(){
     while(trash_int_top < 900){
-        trash_move_top = trash_move_top + moveBy;
+        trash_move_top = trash_move_top + step;
         trash.style.top = trash_move_top + "px";
     }
     trash.style.left = random_x() + 'px';
@@ -79,6 +80,10 @@ var game = function() {
 }
 */
 
-for(let i = 0; i<15; i++){
-banana_movement()
-}
+
+
+function timer(){
+    banana_movement();
+    trash_movement();
+    my_time = setTimeout('timer()',10);
+    }
