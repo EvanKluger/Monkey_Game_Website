@@ -12,14 +12,14 @@ function random_x() {
 
 
 monkey.style.left = '700px';
-monkey.style.top = '800px';
+monkey.style.top = '700px';
 
-banana.style.left = '800px';
+banana.style.left = '400px';
 banana.style.top = '300px';
 banana_int_top = 300;
 banana_int_left = 800;
 
-trash.style.left = '400px';
+trash.style.left = '800px';
 trash.style.top = '300px';
 
 var banana_move_top = banana.offsetTop
