@@ -1,7 +1,7 @@
 let banana = document.querySelector('.Banana');
 let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
-let moveBy = 20;
+let moveBy = 1;
 let counter = 0;
 
 
@@ -15,12 +15,12 @@ monkey.style.left = '700px';
 monkey.style.top = '700px';
 
 banana.style.left = '400px';
-banana.style.top = '150px';
+banana.style.top = '200px';
 banana_int_top = 150;
 banana_int_left = 800;
 
 trash.style.left = '800px';
-trash.style.top = '150px';
+trash.style.top = '200px';
 
 var banana_move_top = banana.offsetTop
 var banana_move_left = banana.offsetLeft
@@ -44,9 +44,9 @@ function banana_movement(){
         banana_int_top = banana_int_top + moveBy;
         banana.style.top = banana_int_top + "px";
     }
-    banana.style.left = 100 + 'px'
-    banana_int_top = 150
-    banana.style.top = '600px';
+    banana.style.left = random_x() + 'px'
+    banana_int_top = 200
+    banana.style.top = '200px';
 }
 
 
@@ -56,8 +56,8 @@ function trash_movement(){
         trash.style.top = trash_move_top + "px";
     }
     trash.style.left = random_x() + 'px';
-    trash_int_top = 150;
-    trash.style.top = '150px';
+    trash_int_top = 200;
+    trash.style.top = '200px';
 }
 
 
@@ -78,8 +78,6 @@ var game = function() {
     }
 }
 */
+for(let i = 0; i<15; i++){
 banana_movement()
-banana_movement()
-banana_movement()
-trash_movement()
-
+}
