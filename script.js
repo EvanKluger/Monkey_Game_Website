@@ -76,8 +76,6 @@ var game = function() {
     }
 }
 */
-play = 'yes'
-while(play == 'yes'){
-    banana_movement()
-    trash_movement()
-}
+banana_movement()
+trash_movement()
+
