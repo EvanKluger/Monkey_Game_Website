@@ -7,7 +7,7 @@ let step = 1;
 
 
 function random_x() {
-    let x = Math.floor(Math.random() * 701) + 300;
+    let x = Math.floor(Math.random() * 801) + 300;
     return x
 }
 
@@ -42,8 +42,8 @@ window.addEventListener('keyup', (e) => {
 
 function banana_movement(){
     while(banana_int_top < 900){
+        banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
-        banana.style.top = banana_int_top + "px";
     }
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
@@ -53,8 +53,8 @@ function banana_movement(){
 
 function trash_movement(){
     while(trash_int_top < 900){
-        trash_move_top = trash_move_top + step;
-        trash.style.top = trash_move_top + "px";
+        trash.style.top = parseInt(trash.style.top) + step + 'px';
+        trash_int_top = trash_int_top + step;
     }
     trash.style.left = random_x() + 'px';
     trash_int_top = 200;
