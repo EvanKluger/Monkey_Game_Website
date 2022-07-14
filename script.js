@@ -44,7 +44,7 @@ function banana_movement(){
         banana_int_top = banana_int_top + moveBy;
         banana.style.top = banana_int_top + "px";
     }
-    banana.style.left = random_x() + 'px'
+    banana.style.left = 100 + 'px'
     banana_int_top = 150
     banana.style.top = '150px';
 }
