@@ -83,7 +83,7 @@ var game = function() {
 
 
 function timer(){
-    banana_movement();
     trash_movement();
+    banana_movement();
     my_time = setTimeout('timer()',10);
     }
