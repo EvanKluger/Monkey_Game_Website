@@ -46,6 +46,7 @@ function banana_movement(){
     }
     banana.style.left = random_x() + 'px'
     banana_int_top = 300
+    banana.style.top = '300px';
 }
 
 
@@ -55,7 +56,8 @@ function trash_movement(){
         trash.style.top = trash_move_top + "px";
     }
     trash.style.left = random_x() + 'px';
-    trash_int_top = 300
+    trash_int_top = 300;
+    trash.style.top = '300px';
 }
 
 
