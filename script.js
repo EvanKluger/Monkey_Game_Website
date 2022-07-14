@@ -81,7 +81,6 @@ var game = function() {
 */
 
 
-
 function timer(){
     banana_movement();
     trash_movement();
