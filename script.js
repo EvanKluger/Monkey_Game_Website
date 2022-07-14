@@ -78,6 +78,7 @@ var game = function() {
     }
 }
 */
+
 for(let i = 0; i<15; i++){
 banana_movement()
 }
