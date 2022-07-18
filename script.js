@@ -8,7 +8,7 @@ let play_A = ''
 let interval;
 
 monkey.style.left = '700px';
-monkey.style.top = '800px';
+monkey.style.top = '750px';
 
 banana.style.left = '400px';
 banana.style.top = '200px';
@@ -34,7 +34,7 @@ function update(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) > 250){
+            if(parseInt(monkey.style.left) > 200){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
