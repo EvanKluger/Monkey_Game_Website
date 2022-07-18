@@ -56,12 +56,13 @@ function banana_movement(){
         trash.style.top = parseInt(trash.style.top) + step + 'px';
         trash_int_top = trash_int_top + step;
     }
-    if(trash_int_top >= 900)
+    if(trash_int_top >= 900){
         trash.style.left = random_x() + 'px';
         trash_int_top = 200;
         trash.style.top = '200px';
     }
 }
+
 
 
 /*
@@ -81,8 +82,6 @@ var game = function() {
     }
 }
 */
-
-
 
 
 
