@@ -74,7 +74,7 @@ function game(){
         trash.style.top = '200px';
     }
 
-    if((parseInt(banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana.style.left) + 70)){
+    if((parseInt(banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana.style.left) + 70) && (parseInt(banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana.style.top) + 70) ){
         score = score + 1;
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
