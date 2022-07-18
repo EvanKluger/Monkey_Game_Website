@@ -17,12 +17,16 @@ monkey.style.left = '700px';
 monkey.style.top = '700px';
 
 banana.style.left = '400px';
-banana.style.top = '200px';
+banana.style.top = '200px';\
+
 banana_int_top = 150;
 banana_int_left = 800;
 
 trash.style.left = '800px';
 trash.style.top = '200px';
+
+trash_int_top = 150;
+trash_int_left = 800;
 
 var banana_move_top = banana.offsetTop
 var banana_move_left = banana.offsetLeft
@@ -93,5 +97,5 @@ function end(){
 function start_game(){
     setInterval(function() {
         setTimeout(banana_movement(), 100)
-        }, 5000);
+        }, 500);
 }
