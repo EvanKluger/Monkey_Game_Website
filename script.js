@@ -94,7 +94,6 @@ function game(){
         trash_int_top = 200;
         trash.style.top = '200px';
         clearInterval(interval)
-
     }
 }
 //FUNCTION THAT CONTROLS THE END GAME BUTTON
@@ -116,4 +115,8 @@ function start_game(){
         setTimeout(game(), 1);
         update();
         }, 25);
+    
+    
+
+    
 }
