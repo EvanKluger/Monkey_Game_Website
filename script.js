@@ -43,6 +43,7 @@ window.addEventListener('keyup', (e) => {
 
 function banana_movement(){
     while(banana_int_top < 900){
+        setTimeout(1000);
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
     }
@@ -54,6 +55,7 @@ function banana_movement(){
 
 function trash_movement(){
     while(trash_int_top < 900){
+        setTimeout(1000);
         trash.style.top = parseInt(trash.style.top) + step + 'px';
         trash_int_top = trash_int_top + step;
     }
@@ -81,14 +83,14 @@ var game = function() {
 }
 */
 
-banana_movement();
-trash_movement();
+
 
 
 function play(){
 play_A = 'yes';
-banana_movement();
 trash_movement();
+banana_movement();
+
     while(play_A == 'yes'){
         if(monkey.style.top == banana.style.top && monkey.style.left >= banana.style.left - 70 && monkey.style.left <= banana.style.left + 70){
             counter = counter + 1; 
