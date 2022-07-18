@@ -8,7 +8,7 @@ let play_A = ''
 let interval;
 
 monkey.style.left = '700px';
-monkey.style.top = '700px';
+monkey.style.top = '800px';
 
 banana.style.left = '400px';
 banana.style.top = '200px';
@@ -107,7 +107,7 @@ function end(){
 
 function start_game(){
     interval = setInterval(function() {
-        setTimeout(game(), 2);
+        setTimeout(game(), 1);
         update();
-        }, 50);
+        }, 25);
 }
