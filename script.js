@@ -64,7 +64,7 @@ function game(){
     }
 
     if((banana.style.left - 70 <= monkey.style.left <= banana.style.left + 70) && (banana.style.top <= monkey.style.top <= banana.style.top + 70)){
-        counter = counter + 1;
+        score = score + 1;
     }
 }
 
