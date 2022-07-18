@@ -33,10 +33,14 @@ function update(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
+            if(monkey.style.left > 100){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
+            }
             break;
         case 'ArrowRight':
+            if(monkey.style.left < 1000){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
+            }
             break;
     }
 });
@@ -64,33 +68,13 @@ function game(){
         trash.style.top = '200px';
     }
 
-    if((banana.style.left - 70 <= monkey.style.left <= banana.style.left + 70) && (banana.style.top <= monkey.style.top <= banana.style.top + 70)){
+    if((banana.style.left - 70 < monkey.style.left) && (monkey.style.left < banana.style.left + 70)){
         score = score + 1;
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
         banana.style.top = '200px';
     }
 }
-
-
-
-/*
-var game = function() {
-    
-    if((trash.style.left <= monkey.style.left <=  trash.style.left + 70) && (trash.style.top <= monkey.style.top <=  trash.style.top + 70)){
-        alert("Game Over. score: "+ counter);
-        counter=0;
-    }
-    else if((banana.style.left <= monkey.style.left <= banana.style.left + 70) && (banana.style.top <= monkey.style.top <= banana.style.top + 70)){
-        counter++;
-        document.getElementById("scoreSpan").innerHTML = counter;
-    }
-    
-    else{
-        document.getElementById("scoreSpan").innerHTML = counter;
-    }
-}
-*/
 
 
 
