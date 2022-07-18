@@ -90,6 +90,6 @@ function end(){
 
 function start_game(){
     setInterval(function() {
-        setTimeout(banana_movement(), 100)
-        }, 500);
+        setTimeout(banana_movement(), 10)
+        }, 50);
 }
