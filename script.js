@@ -81,17 +81,20 @@ var game = function() {
 }
 */
 
+banana_movement();
+trash_movement();
+
+
 function play(){
 play = 'yes';
-
+banana_movement();
+trash_movement();
     while(play == 'yes'){
         if(monkey.style.top == banana.style.top && monkey.style.left >= banana.style.left - 70 && monkey.style.left <= banana.style.left + 70){
             counter = counter + 1; 
         }
-        banana_movement();
-        trash_movement();
-        }
     }
+ }
 
 function end(){
     play = 'no'
