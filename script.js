@@ -33,7 +33,7 @@ function update(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(monkey.style.left > 100){
+            if(parseInt(monkey.style.left) > 100){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -41,7 +41,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(monkey.style.left < 1000){
+            if(parseInt(monkey.style.left) < 1000){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
