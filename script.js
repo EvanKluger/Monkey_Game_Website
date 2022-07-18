@@ -35,13 +35,19 @@ window.addEventListener('keyup', (e) => {
         case 'ArrowLeft':
             if(monkey.style.left > 100){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
-            }
             break;
+            }
+            else{
+            break;
+            }
         case 'ArrowRight':
             if(monkey.style.left < 1000){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
-            }
             break;
+            }
+            else{
+            break;
+            }
     }
 });
 
