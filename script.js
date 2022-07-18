@@ -102,5 +102,5 @@ function end(){
 }
 
 function start_game(){
-    play()
+    setInterval(play(), 1000)
 }
