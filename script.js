@@ -33,7 +33,7 @@ function update(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) > 100){
+            if(parseInt(monkey.style.left) > 300){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -74,7 +74,7 @@ function game(){
         trash.style.top = '200px';
     }
 
-    if((banana.style.left - 70 < monkey.style.left) && (monkey.style.left < banana.style.left + 70)){
+    if((parseInt(banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana.style.left) + 70)){
         score = score + 1;
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
