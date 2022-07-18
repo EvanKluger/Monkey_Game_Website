@@ -46,20 +46,17 @@ function banana_movement(){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
     }
-    else{
+    if(banana_int_top >= 900){
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
     banana.style.top = '200px';
     }
-}
 
-
-function trash_movement(){
     if(trash_int_top < 900){
         trash.style.top = parseInt(trash.style.top) + step + 'px';
         trash_int_top = trash_int_top + step;
     }
-    else{
+    if(trash_int_top >= 900)
         trash.style.left = random_x() + 'px';
         trash_int_top = 200;
         trash.style.top = '200px';
@@ -96,7 +93,6 @@ function end(){
 
 function start_game(){
     setInterval(function() {
-        banana_movement()
-        trash_movement()
+        setTimeout(banana_movement(), 100)
         }, 5000);
 }
