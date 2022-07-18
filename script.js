@@ -6,7 +6,7 @@ let banana = document.querySelector('.Banana');
 let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
 let score = 0
-let moveBy = 20;
+let moveBy = 30;
 let step = 1;
 let play_A = ''
 let interval;
@@ -34,30 +34,36 @@ function update(){
 }
 
 //FUNCTION TO CONTROL THE MONEKY'S MOVEMENT
-window.addEventListener('keyup', (e) => {
-    switch (e.key) {
-        case 'ArrowLeft':
-            if(parseInt(monkey.style.left) > 200){
-            monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
-            break;
-            }
-            else{
-            break;
-            }
-        case 'ArrowRight':
-            if(parseInt(monkey.style.left) < 1250){
-            monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
-            break;
-            }
-            else{
-            break;
-            }
-    }
-});
+
 
 
 //FUNCTION THAT THE GAME RUNS UNDER
 function game(){
+    window.addEventListener('keyup', (e) => {
+        switch (e.key) {
+            case 'ArrowLeft':
+                if(parseInt(monkey.style.left) > 200){
+                monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
+                break;
+                }
+                else{
+                break;
+                }
+            case 'ArrowRight':
+                if(parseInt(monkey.style.left) < 1250){
+                monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
+                break;
+                }
+                else{
+                break;
+                }
+        }
+    });
+    
+    
+    
+    
+    
     if(banana_int_top < 850){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
