@@ -22,10 +22,7 @@
     text-align: center;
     margin-top: 3%;
 }
-h3{
-    font-size: 20px;
-    margin-bottom: 10%;
-}
+
 
 .Jungle{
     margin-top: 5px;
@@ -62,4 +59,8 @@ h3{
     height: 70px;
     width: 70px;
     z-index: 2;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 10%;
 }
