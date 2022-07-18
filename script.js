@@ -12,6 +12,7 @@ function random_x() {
 }
 
 
+
 monkey.style.left = '700px';
 monkey.style.top = '700px';
 
@@ -80,9 +81,14 @@ var game = function() {
 }
 */
 
+function play(){
+play = 'yes';
 
-function timer(){
-    banana_movement();
-    trash_movement();
-    my_time = setTimeout('timer()',10);
+    while(play == 'yes'){
+        if(monkey.style.top == banana.style.top && monkey.style.left >= banana.style.left - 70 && monkey.style.left <= banana.style.left + 70){
+            counter = counter + 1; 
+        }
+        banana_movement();
+        trash_movement();
+        }
     }
