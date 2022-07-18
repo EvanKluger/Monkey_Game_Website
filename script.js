@@ -83,17 +83,31 @@ function game(){
     }
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         alert('GAME OVER')
+        banana.style.left = random_x() + 'px'
+        banana_int_top = 200
+        banana.style.top = '200px';
+        trash.style.left = random_x() + 'px';
+        trash_int_top = 200;
+        trash.style.top = '200px';
         clearInterval(interval)
+
     }
 }
 
 function end(){
     clearInterval(interval)
+    banana.style.left = random_x() + 'px'
+    banana_int_top = 200
+    banana.style.top = '200px';
+    trash.style.left = random_x() + 'px';
+    trash_int_top = 200;
+    trash.style.top = '200px';
+    
 }
 
 function start_game(){
     interval = setInterval(function() {
-        setTimeout(game(), 5);
+        setTimeout(game(), 2);
         update();
         }, 50);
 }
