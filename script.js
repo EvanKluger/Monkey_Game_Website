@@ -88,19 +88,15 @@ var game = function() {
 
 
 
-function play(){
-play_A = 'yes';
 
-while(play_A == 'yes'){
-    setTimeout(banana_movement(), 1000)
-    setTimeout(trash_movement(), 1000)
-    }
- }
 
 function end(){
     play_A = 'no'
 }
 
 function start_game(){
-    setInterval(play(), 1000)
+    setInterval(function() {
+        setTimeout(banana_movement(), 1000);
+        setTimeout(trash_movement(), 1000);
+         }, 5000);
 }
