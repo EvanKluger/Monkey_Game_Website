@@ -26,8 +26,8 @@ function random_x() {
     return x
 }
 
-function draw(){
-    text('Score: ' + Math.floor(score));
+function update(){
+    this.root.querySelector("scoreSpan").textContent = score;
 }
 
 
@@ -98,6 +98,6 @@ function end(){
 function start_game(){
     setInterval(function() {
         setTimeout(game(), 5);
-        draw();
         }, 50);
+        update();
 }
