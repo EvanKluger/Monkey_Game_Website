@@ -55,21 +55,21 @@ window.addEventListener('keyup', (e) => {
 
 
 function game(){
-    if(banana_int_top < 900){
+    if(banana_int_top < 850){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
     }
-    if(banana_int_top >= 900){
+    if(banana_int_top >= 850){
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
     banana.style.top = '200px';
     }
 
-    if(trash_int_top < 900){
+    if(trash_int_top < 850){
         trash.style.top = parseInt(trash.style.top) + step + 'px';
         trash_int_top = trash_int_top + step;
     }
-    if(trash_int_top >= 900){
+    if(trash_int_top >= 850){
         trash.style.left = random_x() + 'px';
         trash_int_top = 200;
         trash.style.top = '200px';
