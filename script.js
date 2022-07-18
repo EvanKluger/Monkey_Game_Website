@@ -42,28 +42,28 @@ window.addEventListener('keyup', (e) => {
 });
 
 function banana_movement(){
-    while(banana_int_top < 900){
-        setTimeout( function (){
+    if(banana_int_top < 900){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
-        }, 1000)
     }
+    else{
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
     banana.style.top = '200px';
+    }
 }
 
 
 function trash_movement(){
-    while(trash_int_top < 900){
-        setTimeout( function (){
+    if(trash_int_top < 900){
         trash.style.top = parseInt(trash.style.top) + step + 'px';
-        trash_int_top = trash_int_top + step;}
-        , 1000)
+        trash_int_top = trash_int_top + step;
     }
-    trash.style.left = random_x() + 'px';
-    trash_int_top = 200;
-    trash.style.top = '200px';
+    else{
+        trash.style.left = random_x() + 'px';
+        trash_int_top = 200;
+        trash.style.top = '200px';
+    }
 }
 
 
@@ -91,14 +91,9 @@ var game = function() {
 function play(){
 play_A = 'yes';
 
-banana_movement();
-trash_movement();
-
-
-    while(play_A == 'yes'){
-        if(monkey.style.top == banana.style.top && monkey.style.left >= banana.style.left - 70 && monkey.style.left <= banana.style.left + 70){
-            counter = counter + 1; 
-        }
+while(play_A == 'yes'){
+    setTimeout(banana_movement(), 1000)
+    setTimeout(trash_movement(), 1000)
     }
  }
 
