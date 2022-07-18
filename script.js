@@ -4,7 +4,7 @@ let monkey = document.querySelector('.Monkey');
 let moveBy = 20;
 let counter = 0;
 let step = 1;
-
+let play = ''
 
 function random_x() {
     let x = Math.floor(Math.random() * 801) + 300;
@@ -92,3 +92,7 @@ play = 'yes';
         trash_movement();
         }
     }
+
+function end(){
+    play = 'no'
+}
