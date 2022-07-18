@@ -66,6 +66,9 @@ function game(){
 
     if((banana.style.left - 70 <= monkey.style.left <= banana.style.left + 70) && (banana.style.top <= monkey.style.top <= banana.style.top + 70)){
         score = score + 1;
+        banana.style.left = random_x() + 'px'
+        banana_int_top = 200
+        banana.style.top = '200px';
     }
 }
 
