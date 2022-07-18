@@ -100,3 +100,7 @@ while(play_A == 'yes'){
 function end(){
     play_A = 'no'
 }
+
+function start_game(){
+    play()
+}
