@@ -4,7 +4,7 @@ let monkey = document.querySelector('.Monkey');
 let moveBy = 20;
 let counter = 0;
 let step = 1;
-let play = ''
+let play_A = ''
 
 function random_x() {
     let x = Math.floor(Math.random() * 801) + 300;
@@ -86,10 +86,10 @@ trash_movement();
 
 
 function play(){
-play = 'yes';
+play_A = 'yes';
 banana_movement();
 trash_movement();
-    while(play == 'yes'){
+    while(play_A == 'yes'){
         if(monkey.style.top == banana.style.top && monkey.style.left >= banana.style.left - 70 && monkey.style.left <= banana.style.left + 70){
             counter = counter + 1; 
         }
@@ -97,5 +97,5 @@ trash_movement();
  }
 
 function end(){
-    play = 'no'
+    play_A = 'no'
 }
