@@ -8,7 +8,7 @@ let play_A = ''
 let interval;
 
 monkey.style.left = '700px';
-monkey.style.top = '800px';
+monkey.style.top = '775px';
 
 banana.style.left = '400px';
 banana.style.top = '200px';
