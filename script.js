@@ -27,9 +27,8 @@ function random_x() {
 }
 
 function update(){
-    this.root.querySelector("scoreSpan").textContent = score;
+    document.getElementById('score').innerHTML = score;
 }
-
 
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
@@ -41,6 +40,8 @@ window.addEventListener('keyup', (e) => {
             break;
     }
 });
+
+
 
 function game(){
     if(banana_int_top < 900){
