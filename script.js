@@ -23,7 +23,7 @@ let trash_int_top = 150;
 let trash_int_left = 800;
 
 function random_x() {
-    let x = Math.floor(Math.random() * 801) + 300;
+    let x = Math.floor(Math.random() * 1001) + 250;
     return x
 }
 
@@ -34,7 +34,7 @@ function update(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) > 300){
+            if(parseInt(monkey.style.left) > 250){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -42,7 +42,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) < 1300){
+            if(parseInt(monkey.style.left) < 1250){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
