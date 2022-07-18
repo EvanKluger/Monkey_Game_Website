@@ -83,6 +83,7 @@ function game(){
     }
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         alert('GAME OVER')
+        score = 0;
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
         banana.style.top = '200px';
@@ -96,6 +97,7 @@ function game(){
 
 function end(){
     clearInterval(interval)
+    score = 0;
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
     banana.style.top = '200px';
