@@ -80,11 +80,11 @@ function game(){
 
 
 function end(){
-    play_A = 'no'
+    clearInterval(interval)
 }
 
 function start_game(){
-    setInterval(function() {
+    interval = setInterval(function() {
         setTimeout(game(), 5);
         }, 50);
         update();
