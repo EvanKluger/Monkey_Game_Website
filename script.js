@@ -5,6 +5,7 @@ let score = 0
 let moveBy = 20;
 let step = 1;
 let play_A = ''
+let interval;
 
 monkey.style.left = '700px';
 monkey.style.top = '700px';
@@ -41,7 +42,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) < 1000){
+            if(parseInt(monkey.style.left) < 1300){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
@@ -80,10 +81,11 @@ function game(){
         banana_int_top = 200
         banana.style.top = '200px';
     }
+    if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
+        alert('GAME OVER')
+        clearInterval(interval)
+    }
 }
-
-
-
 
 function end(){
     clearInterval(interval)
@@ -92,6 +94,6 @@ function end(){
 function start_game(){
     interval = setInterval(function() {
         setTimeout(game(), 5);
-        }, 50);
         update();
+        }, 50);
 }
