@@ -96,7 +96,7 @@ function end(){
 
 function start_game(){
     setInterval(function() {
-        setTimeout(banana_movement(), 1000);
-        setTimeout(trash_movement(), 1000);
-         }, 5000);
+        banana_movement()
+        trash_movement()
+        }, 5000);
 }
