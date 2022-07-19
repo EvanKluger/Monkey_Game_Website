@@ -21,6 +21,7 @@ trash.style.left = '800px';
 trash.style.top = '200px';
 let trash_int_top = 150;
 let trash_int_left = 800;
+let count_speed = 0
 
 
 
@@ -33,6 +34,14 @@ function random_x() {
 //FUNCTION TO UPDATE SCORE
 function update(){
     document.getElementById('score').innerHTML = score;
+}
+
+function faster(){
+    if(count_speed == 5){
+        step = step + 1;
+        moveBy = moveBy + 3;
+        count_speed = 0;
+    }
 }
 
 //FUNCTION TO CONTROL THE MONEKY'S MOVEMENT
@@ -82,6 +91,7 @@ function game(){
 
     if((parseInt(banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana.style.left) + 70) && (parseInt(banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana.style.top) + 70) ){
         score = score + 1;
+        count_speed = count_speed + 1;
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
         banana.style.top = '200px';
@@ -116,6 +126,7 @@ function start_game(){
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
+        faster();
         }, 25);
     
     
