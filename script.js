@@ -125,12 +125,31 @@ function game(){
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         alert('GAME OVER')
         score = 0;
+        banana3.style.left = random_x() + 'px'
+        banana3_int_top = 200
+        banana3.style.top = '200px';
+        trash3.style.left = random_x() + 'px';
+        trash3_int_top = 200;
+        trash3.style.top = '200px';
+        trash3.style.height = '0px'; 
+        trash3.style.width = '0px';
+    
+        banana2.style.left = random_x() + 'px'
+        banana2_int_top = 200
+        banana2.style.top = '200px';
+        trash2.style.left = random_x() + 'px';
+        trash2_int_top = 200;
+        trash2.style.top = '200px';
+        trash2.style.height = '0px'; 
+        trash2.style.width = '0px';
+    
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
         banana.style.top = '200px';
         trash.style.left = random_x() + 'px';
         trash_int_top = 200;
         trash.style.top = '200px';
+        
         clearInterval(interval)
     }
 }
@@ -175,82 +194,93 @@ function add_items_10(){
         if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
+            banana3.style.left = random_x() + 'px'
+            banana3_int_top = 200
+            banana3.style.top = '200px';
+            trash3.style.left = random_x() + 'px';
+            trash3_int_top = 200;
+            trash3.style.top = '200px';
+            trash3.style.height = '0px'; 
+            trash3.style.width = '0px';
+        
             banana2.style.left = random_x() + 'px'
             banana2_int_top = 200
             banana2.style.top = '200px';
             trash2.style.left = random_x() + 'px';
             trash2_int_top = 200;
             trash2.style.top = '200px';
-
+            trash2.style.height = '0px'; 
+            trash2.style.width = '0px';
+        
             banana.style.left = random_x() + 'px'
             banana_int_top = 200
             banana.style.top = '200px';
             trash.style.left = random_x() + 'px';
             trash_int_top = 200;
             trash.style.top = '200px';
+            
             clearInterval(interval)
         }
-        }
+    }
 
-}
-
-//FUNCTION THAT CONTROLS THE END GAME BUTTON
-function end(){
-    clearInterval(interval)
-    score = 0;
-    banana.style.left = random_x() + 'px'
-    banana_int_top = 200
-    banana.style.top = '200px';
-    trash.style.left = random_x() + 'px';
-    trash_int_top = 200;
-    trash.style.top = '200px';
-    
 }
 
 function add_items_20(){
     if(score > 19){
-        banana2.style.height = '70px';
-        banana2.style.width = '70px';
+        banana3.style.height = '70px';
+        banana3.style.width = '70px';
     
-        trash2.style.height = '70px';
-        trash2.style.width = '70px';
+        trash3.style.height = '70px';
+        trash3.style.width = '70px';
 
-        if(banana2_int_top < 850){
-            banana2.style.top = parseInt(banana2.style.top) + step + 'px';
-            banana2_int_top = banana2_int_top + step;
+        if(banana3_int_top < 850){
+            banana3.style.top = parseInt(banana3.style.top) + step + 'px';
+            banana3_int_top = banana3_int_top + step;
         }
-        if(banana2_int_top >= 850){
-        banana2.style.left = random_x() + 'px'
-        banana2_int_top = 200
-        banana2.style.top = '200px';
-        }
-    
-        if(trash2_int_top < 850){
-            trash2.style.top = parseInt(trash2.style.top) + step + 'px';
-            trash2_int_top = trash2_int_top + step;
-        }
-        if(trash2_int_top >= 850){
-            trash2.style.left = random_x() + 'px';
-            trash2_int_top = 200;
-            trash2.style.top = '200px';
+        if(banana3_int_top >= 850){
+        banana3.style.left = random_x() + 'px'
+        banana3_int_top = 200
+        banana3.style.top = '200px';
         }
     
-        if((parseInt(banana2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana2.style.left) + 70) && (parseInt(banana2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana2.style.top) + 70) ){
+        if(trash3_int_top < 850){
+            trash3.style.top = parseInt(trash3.style.top) + step + 'px';
+            trash3_int_top = trash3_int_top + step;
+        }
+        if(trash3_int_top >= 850){
+            trash3.style.left = random_x() + 'px';
+            trash3_int_top = 200;
+            trash3.style.top = '200px';
+        }
+    
+        if((parseInt(banana3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana3.style.left) + 70) && (parseInt(banana3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana3.style.top) + 70) ){
             score = score + 1;
             count_speed = count_speed + 1;
-            banana2.style.left = random_x() + 'px'
-            banana2_int_top = 200
-            banana2.style.top = '200px';
+            banana3.style.left = random_x() + 'px'
+            banana3_int_top = 200
+            banana3.style.top = '200px';
         }
-        if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
+        if((parseInt(trash3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash3.style.left) + 70) && (parseInt(trash3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash3.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
+            banana3.style.left = random_x() + 'px'
+            banana3_int_top = 200
+            banana3.style.top = '200px';
+            trash3.style.left = random_x() + 'px';
+            trash3_int_top = 200;
+            trash3.style.top = '200px';
+            trash3.style.height = '0px'; 
+            trash3.style.width = '0px';
+
+
             banana2.style.left = random_x() + 'px'
             banana2_int_top = 200
             banana2.style.top = '200px';
             trash2.style.left = random_x() + 'px';
             trash2_int_top = 200;
             trash2.style.top = '200px';
+            trash2.style.height = '0px'; 
+            trash2.style.width = '0px';
 
             banana.style.left = random_x() + 'px'
             banana_int_top = 200
@@ -259,21 +289,43 @@ function add_items_20(){
             trash_int_top = 200;
             trash.style.top = '200px';
             clearInterval(interval)
+
+
         }
-        }
+    }
 
 }
+
 
 //FUNCTION THAT CONTROLS THE END GAME BUTTON
 function end(){
     clearInterval(interval)
     score = 0;
+    banana3.style.left = random_x() + 'px'
+    banana3_int_top = 200
+    banana3.style.top = '200px';
+    trash3.style.left = random_x() + 'px';
+    trash3_int_top = 200;
+    trash3.style.top = '200px';
+    trash3.style.height = '0px'; 
+    trash3.style.width = '0px';
+
+    banana2.style.left = random_x() + 'px'
+    banana2_int_top = 200
+    banana2.style.top = '200px';
+    trash2.style.left = random_x() + 'px';
+    trash2_int_top = 200;
+    trash2.style.top = '200px';
+    trash2.style.height = '0px'; 
+    trash2.style.width = '0px';
+
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
     banana.style.top = '200px';
     trash.style.left = random_x() + 'px';
     trash_int_top = 200;
     trash.style.top = '200px';
+    clearInterval(interval)
     
 }
 
