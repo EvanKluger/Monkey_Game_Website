@@ -82,7 +82,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) < 1175){
+            if(parseInt(monkey.style.left) < 1200){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
