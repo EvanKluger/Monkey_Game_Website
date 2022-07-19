@@ -29,9 +29,9 @@
     background-color: rgb(204, 255, 255);
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    height: 600px;
-    width: 1200px;
+    margin-left: 10%;
+    height: 70vh;
+    width: 70vw;
     z-index: 1;
     }
 

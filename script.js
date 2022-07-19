@@ -5,7 +5,8 @@
 let banana = document.querySelector('.Banana');
 let trash = document.querySelector('.Trash');
 let monkey = document.querySelector('.Monkey');
-let score = 0
+let jungle = document.querySelector('.Jungle');
+let score = 0;
 let moveBy = 30;
 let step = 1;
 let play_A = ''
@@ -20,6 +21,7 @@ trash.style.left = '800px';
 trash.style.top = '200px';
 let trash_int_top = 150;
 let trash_int_left = 800;
+
 
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
