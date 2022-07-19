@@ -131,6 +131,9 @@ function game(){
         trash3.style.left = random_x() + 'px';
         trash3_int_top = 200;
         trash3.style.top = '200px';
+        
+        banana3.style.height = '0px'; 
+        banana3.style.width = '0px';
         trash3.style.height = '0px'; 
         trash3.style.width = '0px';
     
@@ -142,6 +145,8 @@ function game(){
         trash2.style.top = '200px';
         trash2.style.height = '0px'; 
         trash2.style.width = '0px';
+        banana2.style.height = '0px'; 
+        banana2.style.width = '0px';
     
         banana.style.left = random_x() + 'px'
         banana_int_top = 200
@@ -150,6 +155,8 @@ function game(){
         trash_int_top = 200;
         trash.style.top = '200px';
         
+        step = 1;
+        moveBy = 30;
         clearInterval(interval)
     }
 }
@@ -219,6 +226,12 @@ function add_items_10(){
             trash_int_top = 200;
             trash.style.top = '200px';
             
+            banana2.style.height = '0px'; 
+            banana2.style.width = '0px';
+            banana3.style.height = '0px'; 
+            banana3.style.width = '0px';
+            step = 1;
+            moveBy = 30;
             clearInterval(interval)
         }
     }
@@ -288,6 +301,13 @@ function add_items_20(){
             trash.style.left = random_x() + 'px';
             trash_int_top = 200;
             trash.style.top = '200px';
+
+            banana2.style.height = '0px'; 
+            banana2.style.width = '0px';
+            banana3.style.height = '0px'; 
+            banana3.style.width = '0px';
+            step = 1;
+            moveBy = 30;
             clearInterval(interval)
 
 
@@ -325,6 +345,13 @@ function end(){
     trash.style.left = random_x() + 'px';
     trash_int_top = 200;
     trash.style.top = '200px';
+
+    banana2.style.height = '0px'; 
+    banana2.style.width = '0px';
+    banana3.style.height = '0px'; 
+    banana3.style.width = '0px';
+    step = 1;
+    moveBy = 30;
     clearInterval(interval)
     
 }
