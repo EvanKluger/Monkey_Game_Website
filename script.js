@@ -14,6 +14,9 @@ let trash2 = document.querySelector('.Trash2');
 let banana3 = document.querySelector('.Banana3');
 let trash3 = document.querySelector('.Trash3');
 
+let banana4 = document.querySelector('.Banana4');
+let trash4 = document.querySelector('.Trash4');
+
 let score = 0;
 let moveBy = 30;
 let step = 1;
@@ -48,6 +51,12 @@ trash3.style.left = '800px';
 trash3.style.top = '200px';
 let trash3_int_top = 150;
 
+banana4.style.left = '400px';
+banana4.style.top = '200px';
+let banana4_int_top = 150;
+trash4.style.left = '800px';
+trash4.style.top = '200px';
+let trash4_int_top = 150;
 
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
@@ -127,6 +136,17 @@ function game(){
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         alert('GAME OVER')
         score = 0;
+        banana4.style.left = random_x() + 'px'
+        banana4_int_top = 200
+        banana4.style.top = '200px';
+        trash4.style.left = random_x() + 'px';
+        trash4_int_top = 200;
+        trash4.style.top = '200px';
+        trash4.style.height = '0px'; 
+        trash4.style.width = '0px';
+        banana4.style.width = '0px';
+        banana4.style.height = '0px';
+        
         banana3.style.left = random_x() + 'px'
         banana3_int_top = 200
         banana3.style.top = '200px';
@@ -203,6 +223,18 @@ function add_items_10(){
         if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
+            
+            banana4.style.left = random_x() + 'px'
+            banana4_int_top = 200
+            banana4.style.top = '200px';
+            trash4.style.left = random_x() + 'px';
+            trash4_int_top = 200;
+            trash4.style.top = '200px';
+            trash4.style.height = '0px'; 
+            trash4.style.width = '0px';
+            banana4.style.width = '0px';
+            banana4.style.height = '0px';
+            
             banana3.style.left = random_x() + 'px'
             banana3_int_top = 200
             banana3.style.top = '200px';
@@ -279,6 +311,19 @@ function add_items_20(){
         if((parseInt(trash3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash3.style.left) + 70) && (parseInt(trash3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash3.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
+            
+            banana4.style.left = random_x() + 'px'
+            banana4_int_top = 200
+            banana4.style.top = '200px';
+            trash4.style.left = random_x() + 'px';
+            trash4_int_top = 200;
+            trash4.style.top = '200px';
+            trash4.style.height = '0px'; 
+            trash4.style.width = '0px';
+            banana4.style.width = '0px';
+            banana4.style.height = '0px';
+            
+            
             banana3.style.left = random_x() + 'px'
             banana3_int_top = 200
             banana3.style.top = '200px';
@@ -321,10 +366,116 @@ function add_items_20(){
 }
 
 
+
+function add_items_30(){
+    if(score > 29){
+        banana4.style.height = '70px';
+        banana4.style.width = '70px';
+    
+        trash4.style.height = '70px';
+        trash4.style.width = '70px';
+
+        if(banana4_int_top < 850){
+            banana4.style.top = parseInt(banana4.style.top) + step + 'px';
+            banana4_int_top = banana4_int_top + step;
+        }
+        if(banana4_int_top >= 850){
+        banana4.style.left = random_x() + 'px'
+        banana4_int_top = 200
+        banana4.style.top = '200px';
+        }
+    
+        if(trash4_int_top < 850){
+            trash4.style.top = parseInt(trash4.style.top) + step + 'px';
+            trash4_int_top = trash4_int_top + step;
+        }
+        if(trash4_int_top >= 850){
+            trash4.style.left = random_x() + 'px';
+            trash4_int_top = 200;
+            trash4.style.top = '200px';
+        }
+    
+        if((parseInt(banana4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana4.style.left) + 70) && (parseInt(banana4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana4.style.top) + 70) ){
+            score = score + 1;
+            count_speed = count_speed + 1;
+            banana4.style.left = random_x() + 'px'
+            banana4_int_top = 200
+            banana4.style.top = '200px';
+        }
+        if((parseInt(trash4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash4.style.left) + 70) && (parseInt(trash4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash4.style.top) + 70) ){
+            alert('GAME OVER')
+            score = 0;
+            banana4.style.left = random_x() + 'px'
+            banana4_int_top = 200
+            banana4.style.top = '200px';
+            trash4.style.left = random_x() + 'px';
+            trash4_int_top = 200;
+            trash4.style.top = '200px';
+            trash4.style.height = '0px'; 
+            trash4.style.width = '0px';
+            banana4.style.width = '0px';
+            banana4.style.height = '0px';
+
+            banana3.style.left = random_x() + 'px'
+            banana3_int_top = 200
+            banana3.style.top = '200px';
+            trash3.style.left = random_x() + 'px';
+            trash3_int_top = 200;
+            trash3.style.top = '200px';
+            trash3.style.height = '0px'; 
+            trash3.style.width = '0px';
+
+
+            banana2.style.left = random_x() + 'px'
+            banana2_int_top = 200
+            banana2.style.top = '200px';
+            trash2.style.left = random_x() + 'px';
+            trash2_int_top = 200;
+            trash2.style.top = '200px';
+            trash2.style.height = '0px'; 
+            trash2.style.width = '0px';
+
+            banana.style.left = random_x() + 'px'
+            banana_int_top = 200
+            banana.style.top = '200px';
+            trash.style.left = random_x() + 'px';
+            trash_int_top = 200;
+            trash.style.top = '200px';
+
+            banana2.style.height = '0px'; 
+            banana2.style.width = '0px';
+            banana3.style.height = '0px'; 
+            banana3.style.width = '0px';
+            step = 1;
+            moveBy = 30;
+            count_speed = 0;
+            clearInterval(interval)
+
+
+        }
+    }
+
+}
+
+
+
+
 //FUNCTION THAT CONTROLS THE END GAME BUTTON
 function end(){
     clearInterval(interval)
     score = 0;
+    banana4.style.left = random_x() + 'px'
+    banana4_int_top = 200
+    banana4.style.top = '200px';
+    trash4.style.left = random_x() + 'px';
+    trash4_int_top = 200;
+    trash4.style.top = '200px';
+    trash4.style.height = '0px'; 
+    trash4.style.width = '0px';
+    banana4.style.width = '0px';
+    banana4.style.height = '0px';
+    
+    
     banana3.style.left = random_x() + 'px'
     banana3_int_top = 200
     banana3.style.top = '200px';
@@ -369,6 +520,7 @@ function start_game(){
         faster();
         add_items_10();
         add_items_20();
+        add_items_30();
         }, 25);
     
     
