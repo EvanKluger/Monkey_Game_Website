@@ -18,8 +18,8 @@ let banana4 = document.querySelector('.Banana4');
 let trash4 = document.querySelector('.Trash4');
 
 let score = 0;
-let moveBy = 30;
-let step = 1;
+let moveBy = 35;
+let step = 2;
 let play_A = ''
 let interval;
 let count_speed = 0;
