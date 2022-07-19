@@ -60,6 +60,24 @@
     width: 70px;
     z-index: 2;
 }
+.Banana2{
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+    z-index: 2;
+}
+
+.Trash2{
+    position: absolute;
+    top: 0px;
+    height: 0px;
+    width: 0px;
+    z-index: 2;
+}
+
+
+
 h3{
     font-size: 20px;
     margin-bottom: 10%;
