@@ -62,7 +62,7 @@ function update(){
 }
 
 function faster(){
-    if(count_speed == 5){
+    if(count_speed > 4){
         step = step + 1;
         moveBy = moveBy + 5;
         count_speed = 0;
