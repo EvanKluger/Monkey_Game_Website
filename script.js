@@ -36,7 +36,6 @@ trash.style.top = '200px';
 let trash_int_top = 150;
 
 
-
 banana2.style.left = '400px';
 banana2.style.top = '200px';
 let banana2_int_top = 150;
@@ -177,8 +176,8 @@ function game(){
         trash_int_top = 200;
         trash.style.top = '200px';
         
-        step = 1;
-        moveBy = 30;
+        step = 2;
+        moveBy = 35;
         clearInterval(interval)
     }
 }
@@ -264,8 +263,8 @@ function add_items_10(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 1;
-            moveBy = 30;
+            step = 2;
+            moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
         }
@@ -354,8 +353,8 @@ function add_items_20(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 1;
-            moveBy = 30;
+            step = 2;
+            moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
 
@@ -446,8 +445,8 @@ function add_items_30(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 1;
-            moveBy = 30;
+            step = 2;
+            moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
 
@@ -505,8 +504,8 @@ function end(){
     banana2.style.width = '0px';
     banana3.style.height = '0px'; 
     banana3.style.width = '0px';
-    step = 1;
-    moveBy = 30;
+    step = 2;
+    moveBy = 35;
     count_speed = 0;
     clearInterval(interval)
     
