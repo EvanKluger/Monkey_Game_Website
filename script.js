@@ -54,7 +54,7 @@ function faster(){
 }
 
 function add_items(){
-    if(count_items > 10){
+    if(score > 10){
         banana2.style.height = '70px';
         banana2.style.width = '70px';
     
