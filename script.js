@@ -12,7 +12,7 @@ let step = 1;
 let play_A = ''
 let interval;
 monkey.style.left = '700px';
-monkey.style.top = '775px';
+monkey.style.top = '750px';
 banana.style.left = '400px';
 banana.style.top = '200px';
 let banana_int_top = 150;
@@ -47,7 +47,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) < 1250){
+            if(parseInt(monkey.style.left) < 1150){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
