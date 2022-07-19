@@ -155,7 +155,7 @@ function game(){
 }
 
 
-//FUNCTION THAT ADDS ANOTHER PAIR OF BANANA AND TRASH AT SCORE > 10
+//FUNCTION THAT ADDS ANOTHER PAIR OF BANANA AND TRASH AT SCORE > 9
 function add_items_10(){
     if(score > 9){
         banana2.style.height = '70px';
@@ -224,7 +224,7 @@ function add_items_10(){
     }
 
 }
-
+//FUNCTION THAT ADDS ANOTHER PAIR OF BANANA AND TRASH AT SCORE > 19
 function add_items_20(){
     if(score > 19){
         banana3.style.height = '70px';
