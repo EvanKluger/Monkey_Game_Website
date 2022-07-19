@@ -234,6 +234,7 @@ function add_items_10(){
             banana3.style.width = '0px';
             step = 1;
             moveBy = 30;
+            count_speed = 0;
             clearInterval(interval)
         }
     }
@@ -310,6 +311,7 @@ function add_items_20(){
             banana3.style.width = '0px';
             step = 1;
             moveBy = 30;
+            count_speed = 0;
             clearInterval(interval)
 
 
@@ -354,6 +356,7 @@ function end(){
     banana3.style.width = '0px';
     step = 1;
     moveBy = 30;
+    count_speed = 0;
     clearInterval(interval)
     
 }
