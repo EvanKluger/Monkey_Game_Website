@@ -25,6 +25,8 @@ let interval;
 let count_speed = 0;
 let count_items = 0;
 
+textOut = "Width : " + jungle.offsetWidth + "px";
+
 monkey.style.left = '700px';
 monkey.style.top = '750px';
 
@@ -513,7 +515,7 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
-    alert(jungle.style.width)
+    alert(textOut.style.width)
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
