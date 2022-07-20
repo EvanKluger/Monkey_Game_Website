@@ -97,12 +97,12 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) + moveBy < (parseInt(jungle_width)*(87.5/75))){
+            if(parseInt(monkey.style.left) + moveBy < (parseInt(jungle_width)*(87.5/75)-100)){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
             else{
-            monkey.style.left = parseInt(jungle_width)*(87.5/75) + 'px';
+            monkey.style.left = parseInt(jungle_width)*(87.5/75) - 100 + 'px';
             break;
             }
     }
