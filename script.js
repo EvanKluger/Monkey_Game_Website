@@ -28,7 +28,7 @@ let count_items = 0;
 let jungle_width = jungle.offsetWidth + "px";
 let jungle_height = jungle.offsetHeight + 'px'
 
-let monkey_head = ((jungle_height*(87.5/75))-100)
+let monkey_head = ((jungle_height*(85.5/75))-100)
 monkey.style.left = '700px';
 
 
@@ -519,7 +519,6 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
-    alert(jungle_width);
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
