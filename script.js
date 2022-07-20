@@ -28,10 +28,11 @@ let count_items = 0;
 let jungle_width = jungle.offsetWidth + "px";
 let jungle_height = jungle.offsetHeight + 'px';
 
+let bottom_jungle = (parseInt(jungle_height)*(85.5/75));
 let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
+
+
 monkey.style.left = '700px';
-
-
 monkey.style.top = monkey_head + 'px';
 
 banana.style.left = '400px';
@@ -66,7 +67,7 @@ let trash4_int_top = 150;
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
 function random_x() {
-    let x = Math.floor(Math.random() * 1001) + 250;
+    let x = Math.floor(Math.random() * jungle_width) + (parseInt(jungle_width)*(12.5/75));
     return x
 }
 
