@@ -82,7 +82,7 @@ function faster(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) - moveBy > 200){
+            if(parseInt(monkey.style.left) - moveBy > jungle.style.left){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
