@@ -82,7 +82,7 @@ function faster(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) - moveBy > (jungle.style.width/3)){
+            if(parseInt(monkey.style.left) - moveBy > (jungle.style.width)){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -513,6 +513,7 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
+    alert(jungle.style.width)
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
