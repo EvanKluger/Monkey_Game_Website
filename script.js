@@ -28,7 +28,7 @@ let count_items = 0;
 let jungle_width = jungle.offsetWidth + "px";
 let jungle_height = jungle.offsetHeight + 'px';
 
-let monkey_head = ((parseInt(jungle_height)*(87.5/75)));
+let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
 monkey.style.left = '700px';
 
 
