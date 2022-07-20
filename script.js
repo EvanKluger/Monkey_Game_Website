@@ -25,7 +25,7 @@ let interval;
 let count_speed = 0;
 let count_items = 0;
 
-textOut = "Width : " + jungle.offsetWidth + "px";
+let jungle_width = "Width : " + jungle.offsetWidth + "px";
 
 monkey.style.left = '700px';
 monkey.style.top = '750px';
@@ -84,7 +84,7 @@ function faster(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) - moveBy > (jungle.style.width)){
+            if(parseInt(monkey.style.left) - moveBy > (200)){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -515,7 +515,7 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
-    alert(textOut.style.width)
+    alert(jungle_width);
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
