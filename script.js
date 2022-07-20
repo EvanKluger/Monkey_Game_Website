@@ -25,7 +25,7 @@ let interval;
 let count_speed = 0;
 let count_items = 0;
 
-let jungle_width = "Width : " + jungle.offsetWidth + "px";
+let jungle_width = jungle.offsetWidth + "px";
 
 monkey.style.left = '700px';
 monkey.style.top = '750px';
@@ -84,7 +84,7 @@ function faster(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) - moveBy > (200)){
+            if(parseInt(monkey.style.left) - moveBy > (parseInt(jungle_width)*(12.5/75))){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
@@ -93,7 +93,7 @@ window.addEventListener('keyup', (e) => {
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) + moveBy < 1200){
+            if(parseInt(monkey.style.left) + moveBy < (parseInt(jungle_width)*(87.5/75))){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
