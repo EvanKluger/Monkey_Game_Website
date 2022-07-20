@@ -28,7 +28,7 @@ let count_items = 0;
 let jungle_width = jungle.offsetWidth + "px";
 let jungle_height = jungle.offsetHeight + 'px'
 
-let monkey_head = ((jungle_height*(87.5/75))+100)
+let monkey_head = ((jungle_height*(87.5/75))-100)
 monkey.style.left = '700px';
 
 
@@ -88,21 +88,21 @@ function faster(){
 window.addEventListener('keyup', (e) => {
     switch (e.key) {
         case 'ArrowLeft':
-            if(parseInt(monkey.style.left) - moveBy > (parseInt(jungle_width)*(12.5/75)) + 100){
+            if(parseInt(monkey.style.left) - moveBy > (parseInt(jungle_width)*(12.5/75))){
             monkey.style.left = parseInt(monkey.style.left) - moveBy + 'px';
             break;
             }
             else{
-            monkey.style.left = '201px'
+            monkey.style.left = parseInt(jungle_width)*(12.5/75) + 'px';
             break;
             }
         case 'ArrowRight':
-            if(parseInt(monkey.style.left) + moveBy < (parseInt(jungle_width)*(87.5/75)) - 100){
+            if(parseInt(monkey.style.left) + moveBy < (parseInt(jungle_width)*(87.5/75))){
             monkey.style.left = parseInt(monkey.style.left) + moveBy + 'px';
             break;
             }
             else{
-            monkey.style.left = '1200px';
+            monkey.style.left = parseInt(jungle_width)*(87.5/75) + 'px';
             break;
             }
     }
