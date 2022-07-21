@@ -28,7 +28,7 @@ let count_items = 0;
 let jungle_width = jungle.offsetWidth + "px";
 let jungle_height = jungle.offsetHeight + 'px';
 
-let bottom_jungle = (parseInt(jungle_height)*(85.5/75));
+let bottom_jungle = (parseInt(jungle_height)*(85.5/75)) + 70;
 let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
 
 
@@ -56,7 +56,7 @@ banana3.style.left = '400px';
 banana3.style.top = top_jungle;
 let banana3_int_top = parseInt(top_jungle);
 trash3.style.left = '800px';
-trash3.style.top = '200px';
+trash3.style.top = parseInt(top_jungle);
 let trash3_int_top = parseInt(top_jungle);
 
 banana4.style.left = '400px';
