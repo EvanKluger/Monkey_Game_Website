@@ -32,7 +32,7 @@ let bottom_jungle = (parseInt(jungle_height)*(85.5/75));
 let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
 
 
-let top_jungle = (parseInt(jungle_height)*(12.5/75)) + 70 + 'px';
+let top_jungle = (parseInt(jungle_height)*(14.5/75)) + 70 + 'px';
 
 monkey.style.left = parseInt(jungle_width)*(12.5/75) + parseInt(jungle_width)/2 + 'px';
 monkey.style.top = monkey_head + 'px';
