@@ -32,37 +32,39 @@ let bottom_jungle = (parseInt(jungle_height)*(85.5/75));
 let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
 
 
-monkey.style.left = '700px';
+let top_jungle = (parseInt(jungle_height)*(10.5/75)) + 'px';
+
+monkey.style.left = parseInt(jungle_width)*(12.5/75) + parseInt(jungle_width)/2 + 'px';
 monkey.style.top = monkey_head + 'px';
 
 banana.style.left = '400px';
-banana.style.top = '200px';
-let banana_int_top = 150;
+banana.style.top = top_jungle;
+let banana_int_top = parseInt(top_jungle);
 trash.style.left = '800px';
-trash.style.top = '200px';
-let trash_int_top = 150;
+trash.style.top = top_jungle;
+let trash_int_top = parseInt(top_jungle);
 
 
 banana2.style.left = '400px';
-banana2.style.top = '200px';
-let banana2_int_top = 150;
+banana2.style.top = top_jungle;
+let banana2_int_top = parseInt(top_jungle);
 trash2.style.left = '800px';
-trash2.style.top = '200px';
-let trash2_int_top = 150;
+trash2.style.top = top_jungle;
+let trash2_int_top = parseInt(top_jungle);
 
 banana3.style.left = '400px';
-banana3.style.top = '200px';
-let banana3_int_top = 150;
+banana3.style.top = top_jungle;
+let banana3_int_top = parseInt(top_jungle);
 trash3.style.left = '800px';
 trash3.style.top = '200px';
-let trash3_int_top = 150;
+let trash3_int_top = parseInt(top_jungle);
 
 banana4.style.left = '400px';
-banana4.style.top = '200px';
-let banana4_int_top = 150;
+banana4.style.top = top_jungle;
+let banana4_int_top = parseInt(top_jungle);
 trash4.style.left = '800px';
-trash4.style.top = '200px';
-let trash4_int_top = 150;
+trash4.style.top = top_jungle;
+let trash4_int_top = parseInt(top_jungle);
 
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
@@ -112,53 +114,53 @@ window.addEventListener('keyup', (e) => {
 
 //FUNCTION THAT THE GAME RUNS UNDER
 function game(){
-    if(banana_int_top < 850){
+    if(banana_int_top < parseInt(bottom_jungle)){
         banana.style.top = parseInt(banana.style.top) + step + 'px';
         banana_int_top = banana_int_top + step;
     }
-    if(banana_int_top >= 850){
+    if(banana_int_top >= parseInt(bottom_jungle)){
     banana.style.left = random_x() + 'px'
-    banana_int_top = 200
-    banana.style.top = '200px';
+    banana_int_top = parseInt(top_jungle)
+    banana.style.top = top_jungle;
     }
 
-    if(trash_int_top < 850){
+    if(trash_int_top < parseInt(bottom_jungle)){
         trash.style.top = parseInt(trash.style.top) + step + 'px';
         trash_int_top = trash_int_top + step;
     }
-    if(trash_int_top >= 850){
+    if(trash_int_top >= parseInt(bottom_jungle)){
         trash.style.left = random_x() + 'px';
-        trash_int_top = 200;
-        trash.style.top = '200px';
+        trash_int_top = parseInt(top_jungle);
+        trash.style.top = top_jungle;
     }
 
     if((parseInt(banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana.style.left) + 70) && (parseInt(banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana.style.top) + 70) ){
         score = score + 1;
         count_speed = count_speed + 1;
         banana.style.left = random_x() + 'px'
-        banana_int_top = 200
-        banana.style.top = '200px';
+        banana_int_top = parseInt(top_jungle);
+        banana.style.top = top_jungle;
     }
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         alert('GAME OVER')
         score = 0;
         banana4.style.left = random_x() + 'px'
-        banana4_int_top = 200
-        banana4.style.top = '200px';
+        banana4_int_top = parseInt(top_jungle);
+        banana4.style.top = top_jungle;
         trash4.style.left = random_x() + 'px';
-        trash4_int_top = 200;
-        trash4.style.top = '200px';
+        trash4_int_top = parseInt(top_jungle);
+        trash4.style.top = top_jungle;
         trash4.style.height = '0px'; 
         trash4.style.width = '0px';
         banana4.style.width = '0px';
         banana4.style.height = '0px';
         
         banana3.style.left = random_x() + 'px'
-        banana3_int_top = 200
-        banana3.style.top = '200px';
+        banana3_int_top = parseInt(top_jungle);
+        banana3.style.top = top_jungle;
         trash3.style.left = random_x() + 'px';
-        trash3_int_top = 200;
-        trash3.style.top = '200px';
+        trash3_int_top = parseInt(top_jungle);
+        trash3.style.top = top_jungle;
         
         banana3.style.height = '0px'; 
         banana3.style.width = '0px';
@@ -166,22 +168,22 @@ function game(){
         trash3.style.width = '0px';
     
         banana2.style.left = random_x() + 'px'
-        banana2_int_top = 200
-        banana2.style.top = '200px';
+        banana2_int_top = parseInt(top_jungle);
+        banana2.style.top = top_jungle;
         trash2.style.left = random_x() + 'px';
-        trash2_int_top = 200;
-        trash2.style.top = '200px';
+        trash2_int_top = parseInt(top_jungle);
+        trash2.style.top = top_jungle;
         trash2.style.height = '0px'; 
         trash2.style.width = '0px';
         banana2.style.height = '0px'; 
         banana2.style.width = '0px';
     
         banana.style.left = random_x() + 'px'
-        banana_int_top = 200
-        banana.style.top = '200px';
+        banana_int_top = parseInt(top_jungle);
+        banana.style.top = top_jungle;
         trash.style.left = random_x() + 'px';
-        trash_int_top = 200;
-        trash.style.top = '200px';
+        trash_int_top = parseInt(top_jungle);
+        trash.style.top = top_jungle;
         
         step = 2;
         moveBy = 35;
@@ -199,72 +201,72 @@ function add_items_10(){
         trash2.style.height = '70px';
         trash2.style.width = '70px';
 
-        if(banana2_int_top < 850){
+        if(banana2_int_top < parseInt(bottom_jungle)){
             banana2.style.top = parseInt(banana2.style.top) + step + 'px';
             banana2_int_top = banana2_int_top + step;
         }
-        if(banana2_int_top >= 850){
+        if(banana2_int_top >= parseInt(bottom_jungle)){
         banana2.style.left = random_x() + 'px'
-        banana2_int_top = 200
-        banana2.style.top = '200px';
+        banana2_int_top = parseInt(top_jungle);
+        banana2.style.top = top_jungle;
         }
     
-        if(trash2_int_top < 850){
+        if(trash2_int_top < parseInt(bottom_jungle)){
             trash2.style.top = parseInt(trash2.style.top) + step + 'px';
             trash2_int_top = trash2_int_top + step;
         }
-        if(trash2_int_top >= 850){
+        if(trash2_int_top >= parseInt(bottom_jungle)){
             trash2.style.left = random_x() + 'px';
-            trash2_int_top = 200;
-            trash2.style.top = '200px';
+            trash2_int_top = parseInt(top_jungle);
+            trash2.style.top = top_jungle;
         }
     
         if((parseInt(banana2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana2.style.left) + 70) && (parseInt(banana2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana2.style.top) + 70) ){
             score = score + 1;
             count_speed = count_speed + 1;
             banana2.style.left = random_x() + 'px'
-            banana2_int_top = 200
-            banana2.style.top = '200px';
+            banana2_int_top = parseInt(top_jungle);
+            banana2.style.top = top_jungle;
         }
         if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
             
             banana4.style.left = random_x() + 'px'
-            banana4_int_top = 200
-            banana4.style.top = '200px';
+            banana4_int_top = parseInt(top_jungle);
+            banana4.style.top = top_jungle;
             trash4.style.left = random_x() + 'px';
-            trash4_int_top = 200;
-            trash4.style.top = '200px';
+            trash4_int_top = parseInt(top_jungle);
+            trash4.style.top = top_jungle;
             trash4.style.height = '0px'; 
             trash4.style.width = '0px';
             banana4.style.width = '0px';
             banana4.style.height = '0px';
             
             banana3.style.left = random_x() + 'px'
-            banana3_int_top = 200
-            banana3.style.top = '200px';
+            banana3_int_top = parseInt(top_jungle)
+            banana3.style.top = top_jungle;
             trash3.style.left = random_x() + 'px';
-            trash3_int_top = 200;
-            trash3.style.top = '200px';
+            trash3_int_top = parseInt(top_jungle);
+            trash3.style.top = top_jungle;
             trash3.style.height = '0px'; 
             trash3.style.width = '0px';
         
             banana2.style.left = random_x() + 'px'
-            banana2_int_top = 200
-            banana2.style.top = '200px';
+            banana2_int_top = parseInt(top_jungle);
+            banana2.style.top = top_jungle;
             trash2.style.left = random_x() + 'px';
-            trash2_int_top = 200;
-            trash2.style.top = '200px';
+            trash2_int_top = parseInt(top_jungle);
+            trash2.style.top = top_jungle;
             trash2.style.height = '0px'; 
             trash2.style.width = '0px';
         
             banana.style.left = random_x() + 'px'
-            banana_int_top = 200
-            banana.style.top = '200px';
+            banana_int_top = parseInt(top_jungle);
+            banana.style.top = top_jungle;
             trash.style.left = random_x() + 'px';
-            trash_int_top = 200;
-            trash.style.top = '200px';
+            trash_int_top = parseInt(top_jungle);
+            trash.style.top = top_jungle;
             
             banana2.style.height = '0px'; 
             banana2.style.width = '0px';
@@ -287,24 +289,24 @@ function add_items_20(){
         trash3.style.height = '70px';
         trash3.style.width = '70px';
 
-        if(banana3_int_top < 850){
+        if(banana3_int_top < parseInt(bottom_jungle)){
             banana3.style.top = parseInt(banana3.style.top) + step + 'px';
             banana3_int_top = banana3_int_top + step;
         }
-        if(banana3_int_top >= 850){
+        if(banana3_int_top >= parseInt(bottom_jungle)){
         banana3.style.left = random_x() + 'px'
         banana3_int_top = 200
-        banana3.style.top = '200px';
+        banana3.style.top = top_jungle;
         }
     
-        if(trash3_int_top < 850){
+        if(trash3_int_top < parseInt(bottom_jungle)){
             trash3.style.top = parseInt(trash3.style.top) + step + 'px';
             trash3_int_top = trash3_int_top + step;
         }
-        if(trash3_int_top >= 850){
+        if(trash3_int_top >= parseInt(bottom_jungle)){
             trash3.style.left = random_x() + 'px';
             trash3_int_top = 200;
-            trash3.style.top = '200px';
+            trash3.style.top = top_jungle;
         }
     
         if((parseInt(banana3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana3.style.left) + 70) && (parseInt(banana3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana3.style.top) + 70) ){
@@ -312,7 +314,7 @@ function add_items_20(){
             count_speed = count_speed + 1;
             banana3.style.left = random_x() + 'px'
             banana3_int_top = 200
-            banana3.style.top = '200px';
+            banana3.style.top = top_jungle;
         }
         if((parseInt(trash3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash3.style.left) + 70) && (parseInt(trash3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash3.style.top) + 70) ){
             alert('GAME OVER')
@@ -320,10 +322,10 @@ function add_items_20(){
             
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
-            banana4.style.top = '200px';
+            banana4.style.top = top_jungle;
             trash4.style.left = random_x() + 'px';
             trash4_int_top = 200;
-            trash4.style.top = '200px';
+            trash4.style.top = top_jungle;
             trash4.style.height = '0px'; 
             trash4.style.width = '0px';
             banana4.style.width = '0px';
@@ -332,29 +334,29 @@ function add_items_20(){
             
             banana3.style.left = random_x() + 'px'
             banana3_int_top = 200
-            banana3.style.top = '200px';
+            banana3.style.top = top_jungle;
             trash3.style.left = random_x() + 'px';
             trash3_int_top = 200;
-            trash3.style.top = '200px';
+            trash3.style.top = top_jungle;
             trash3.style.height = '0px'; 
             trash3.style.width = '0px';
 
 
             banana2.style.left = random_x() + 'px'
             banana2_int_top = 200
-            banana2.style.top = '200px';
+            banana2.style.top = top_jungle;
             trash2.style.left = random_x() + 'px';
             trash2_int_top = 200;
-            trash2.style.top = '200px';
+            trash2.style.top = top_jungle;
             trash2.style.height = '0px'; 
             trash2.style.width = '0px';
 
             banana.style.left = random_x() + 'px'
             banana_int_top = 200
-            banana.style.top = '200px';
+            banana.style.top = top_jungle;
             trash.style.left = random_x() + 'px';
             trash_int_top = 200;
-            trash.style.top = '200px';
+            trash.style.top = top_jungle;
 
             banana2.style.height = '0px'; 
             banana2.style.width = '0px';
@@ -381,24 +383,24 @@ function add_items_30(){
         trash4.style.height = '70px';
         trash4.style.width = '70px';
 
-        if(banana4_int_top < 850){
+        if(banana4_int_top < parseInt(bottom_jungle)){
             banana4.style.top = parseInt(banana4.style.top) + step + 'px';
             banana4_int_top = banana4_int_top + step;
         }
-        if(banana4_int_top >= 850){
+        if(banana4_int_top >= parseInt(bottom_jungle)){
         banana4.style.left = random_x() + 'px'
         banana4_int_top = 200
-        banana4.style.top = '200px';
+        banana4.style.top = top_jungle;
         }
     
-        if(trash4_int_top < 850){
+        if(trash4_int_top < parseInt(bottom_jungle)){
             trash4.style.top = parseInt(trash4.style.top) + step + 'px';
             trash4_int_top = trash4_int_top + step;
         }
-        if(trash4_int_top >= 850){
+        if(trash4_int_top >= parseInt(bottom_jungle)){
             trash4.style.left = random_x() + 'px';
             trash4_int_top = 200;
-            trash4.style.top = '200px';
+            trash4.style.top = top_jungle;
         }
     
         if((parseInt(banana4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(banana4.style.left) + 70) && (parseInt(banana4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(banana4.style.top) + 70) ){
@@ -406,17 +408,17 @@ function add_items_30(){
             count_speed = count_speed + 1;
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
-            banana4.style.top = '200px';
+            banana4.style.top = top_jungle;
         }
         if((parseInt(trash4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash4.style.left) + 70) && (parseInt(trash4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash4.style.top) + 70) ){
             alert('GAME OVER')
             score = 0;
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
-            banana4.style.top = '200px';
+            banana4.style.top = top_jungle;
             trash4.style.left = random_x() + 'px';
             trash4_int_top = 200;
-            trash4.style.top = '200px';
+            trash4.style.top = top_jungle;
             trash4.style.height = '0px'; 
             trash4.style.width = '0px';
             banana4.style.width = '0px';
@@ -424,29 +426,29 @@ function add_items_30(){
 
             banana3.style.left = random_x() + 'px'
             banana3_int_top = 200
-            banana3.style.top = '200px';
+            banana3.style.top = top_jungle;
             trash3.style.left = random_x() + 'px';
             trash3_int_top = 200;
-            trash3.style.top = '200px';
+            trash3.style.top = top_jungle;
             trash3.style.height = '0px'; 
             trash3.style.width = '0px';
 
 
             banana2.style.left = random_x() + 'px'
             banana2_int_top = 200
-            banana2.style.top = '200px';
+            banana2.style.top = top_jungle;
             trash2.style.left = random_x() + 'px';
             trash2_int_top = 200;
-            trash2.style.top = '200px';
+            trash2.style.top = top_jungle;
             trash2.style.height = '0px'; 
             trash2.style.width = '0px';
 
             banana.style.left = random_x() + 'px'
             banana_int_top = 200
-            banana.style.top = '200px';
+            banana.style.top = top_jungle;
             trash.style.left = random_x() + 'px';
             trash_int_top = 200;
-            trash.style.top = '200px';
+            trash.style.top = top_jungle;
 
             banana2.style.height = '0px'; 
             banana2.style.width = '0px';
@@ -472,10 +474,10 @@ function end(){
     score = 0;
     banana4.style.left = random_x() + 'px'
     banana4_int_top = 200
-    banana4.style.top = '200px';
+    banana4.style.top = top_jungle;
     trash4.style.left = random_x() + 'px';
     trash4_int_top = 200;
-    trash4.style.top = '200px';
+    trash4.style.top = top_jungle;
     trash4.style.height = '0px'; 
     trash4.style.width = '0px';
     banana4.style.width = '0px';
@@ -484,28 +486,28 @@ function end(){
     
     banana3.style.left = random_x() + 'px'
     banana3_int_top = 200
-    banana3.style.top = '200px';
+    banana3.style.top = top_jungle;
     trash3.style.left = random_x() + 'px';
     trash3_int_top = 200;
-    trash3.style.top = '200px';
+    trash3.style.top = top_jungle;
     trash3.style.height = '0px'; 
     trash3.style.width = '0px';
 
     banana2.style.left = random_x() + 'px'
     banana2_int_top = 200
-    banana2.style.top = '200px';
+    banana2.style.top = top_jungle;
     trash2.style.left = random_x() + 'px';
     trash2_int_top = 200;
-    trash2.style.top = '200px';
+    trash2.style.top = top_jungle;
     trash2.style.height = '0px'; 
     trash2.style.width = '0px';
 
     banana.style.left = random_x() + 'px'
     banana_int_top = 200
-    banana.style.top = '200px';
+    banana.style.top = top_jungle;
     trash.style.left = random_x() + 'px';
     trash_int_top = 200;
-    trash.style.top = '200px';
+    trash.style.top = top_jungle;
 
     banana2.style.height = '0px'; 
     banana2.style.width = '0px';
