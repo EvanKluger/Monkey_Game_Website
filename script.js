@@ -2,37 +2,37 @@
 
 
 //VARIABLES AND CONSTANTS
-let monkey = document.querySelector('.Monkey');
-let jungle = document.querySelector('.Jungle');
+var monkey = document.querySelector('.Monkey');
+var jungle = document.querySelector('.Jungle');
 
-let banana = document.querySelector('.Banana');
-let trash = document.querySelector('.Trash');
+var banana = document.querySelector('.Banana');
+var trash = document.querySelector('.Trash');
 
-let banana2 = document.querySelector('.Banana2');
-let trash2 = document.querySelector('.Trash2');
+var banana2 = document.querySelector('.Banana2');
+var trash2 = document.querySelector('.Trash2');
 
-let banana3 = document.querySelector('.Banana3');
-let trash3 = document.querySelector('.Trash3');
+var banana3 = document.querySelector('.Banana3');
+var trash3 = document.querySelector('.Trash3');
 
-let banana4 = document.querySelector('.Banana4');
-let trash4 = document.querySelector('.Trash4');
+var banana4 = document.querySelector('.Banana4');
+var trash4 = document.querySelector('.Trash4');
 
 let score = 0;
 let moveBy = 35;
 let step = 2;
-let play_A = ''
+
 let interval;
 let count_speed = 0;
 let count_items = 0;
 
-let jungle_width = jungle.offsetWidth + "px";
-let jungle_height = jungle.offsetHeight + 'px';
+var jungle_width = jungle.offsetWidth + "px";
+var jungle_height = jungle.offsetHeight + 'px';
 
-let bottom_jungle = (parseInt(jungle_height)*(85.5/75)) + 70;
-let monkey_head = ((parseInt(jungle_height)*(85.5/75)));
+var bottom_jungle = (parseInt(jungle_height)*(85.5/75)) + 70;
+var monkey_head = ((parseInt(jungle_height)*(85.5/75)));
 
 
-let top_jungle = (parseInt(jungle_height)*(14.5/75)) + 70 + 'px';
+var top_jungle = (parseInt(jungle_height)*(14.5/75)) + 70 + 'px';
 
 monkey.style.left = parseInt(jungle_width)*(12.5/75) + parseInt(jungle_width)/2 + 'px';
 monkey.style.top = monkey_head + 'px';
