@@ -37,32 +37,32 @@ var top_jungle = (parseInt(jungle_height)*(14.5/75)) + 70 + 'px';
 monkey.style.left = parseInt(jungle_width)*(12.5/75) + parseInt(jungle_width)/2 + 'px';
 monkey.style.top = monkey_head + 'px';
 
-banana.style.left = '400px';
+banana.style.left = random_x() + 'px';
 banana.style.top = top_jungle;
 let banana_int_top = parseInt(top_jungle);
-trash.style.left = '800px';
+trash.style.left = random_x() + 'px';
 trash.style.top = top_jungle;
 let trash_int_top = parseInt(top_jungle);
 
 
-banana2.style.left = '400px';
+banana2.style.left = random_x() + 'px';
 banana2.style.top = top_jungle;
 let banana2_int_top = parseInt(top_jungle);
-trash2.style.left = '800px';
+trash2.style.left = random_x() + 'px';
 trash2.style.top = top_jungle;
 let trash2_int_top = parseInt(top_jungle);
 
-banana3.style.left = '400px';
+banana3.style.left = random_x() + 'px';
 banana3.style.top = top_jungle;
 let banana3_int_top = parseInt(top_jungle);
-trash3.style.left = '800px';
+trash3.style.left = random_x() + 'px';
 trash3.style.top = parseInt(top_jungle);
 let trash3_int_top = parseInt(top_jungle);
 
-banana4.style.left = '400px';
+banana4.style.left = random_x() + 'px';
 banana4.style.top = top_jungle;
 let banana4_int_top = parseInt(top_jungle);
-trash4.style.left = '800px';
+trash4.style.left = random_x() + 'px';
 trash4.style.top = top_jungle;
 let trash4_int_top = parseInt(top_jungle);
 
@@ -178,7 +178,7 @@ function game(){
         banana2.style.height = '0px'; 
         banana2.style.width = '0px';
     
-        banana.style.left = random_x() + 'px'
+        banana.style.left = random_x() + 'px';
         banana_int_top = parseInt(top_jungle);
         banana.style.top = top_jungle;
         trash.style.left = random_x() + 'px';
