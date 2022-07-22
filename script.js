@@ -69,7 +69,7 @@ let trash4_int_top = parseInt(top_jungle);
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
 function random_x() {
-    let x = Math.floor((Math.random() * parseInt(jungle_width)) - 70) + (parseInt(jungle_width)*(12.5/75));
+    let x = Math.floor(Math.random() * (parseInt(jungle_width) - 70)) + (parseInt(jungle_width)*(12.5/75));
     return x
 }
 
