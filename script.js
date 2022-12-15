@@ -143,7 +143,7 @@ function game(){
     }
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
         //alert('GAME OVER')
-        score = 0;
+        //score = 0;
         banana4.style.left = random_x() + 'px'
         banana4_int_top = parseInt(top_jungle);
         banana4.style.top = top_jungle;
@@ -185,7 +185,7 @@ function game(){
         trash_int_top = parseInt(top_jungle);
         trash.style.top = top_jungle;
         
-        step = 2;
+        step = 4;
         moveBy = 35;
         clearInterval(interval)
     }
@@ -230,7 +230,7 @@ function add_items_10(){
         }
         if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
             //alert('GAME OVER')
-            score = 0;
+            //score = 0;
             
             banana4.style.left = random_x() + 'px'
             banana4_int_top = parseInt(top_jungle);
@@ -272,7 +272,7 @@ function add_items_10(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 2;
+            step = 4;
             moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
@@ -318,7 +318,7 @@ function add_items_20(){
         }
         if((parseInt(trash3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash3.style.left) + 70) && (parseInt(trash3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash3.style.top) + 70) ){
             //alert('GAME OVER')
-            score = 0;
+            //score = 0;
             
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
@@ -362,7 +362,7 @@ function add_items_20(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 2;
+            step = 4;
             moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
@@ -412,7 +412,7 @@ function add_items_30(){
         }
         if((parseInt(trash4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash4.style.left) + 70) && (parseInt(trash4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash4.style.top) + 70) ){
             //alert('GAME OVER')
-            score = 0;
+            //score = 0;
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
             banana4.style.top = top_jungle;
@@ -454,7 +454,7 @@ function add_items_30(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
-            step = 2;
+            step = 4;
             moveBy = 35;
             count_speed = 0;
             clearInterval(interval)
@@ -471,7 +471,7 @@ function add_items_30(){
 //FUNCTION THAT CONTROLS THE END GAME BUTTON
 function end(){
     clearInterval(interval)
-    score = 0;
+    //score = 0;
     banana4.style.left = random_x() + 'px'
     banana4_int_top = 200
     banana4.style.top = top_jungle;
@@ -513,7 +513,7 @@ function end(){
     banana2.style.width = '0px';
     banana3.style.height = '0px'; 
     banana3.style.width = '0px';
-    step = 2;
+    step = 4;
     moveBy = 35;
     count_speed = 0;
     clearInterval(interval)
@@ -522,6 +522,7 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
+    score = 0;
     interval = setInterval(function() {
         setTimeout(game(), 1);
         update();
