@@ -19,7 +19,7 @@ var trash4 = document.querySelector('.Trash4');
 
 let score = 0;
 let moveBy = 35;
-let step = 2;
+let step = 4;
 
 let interval;
 let count_speed = 0;
@@ -142,7 +142,7 @@ function game(){
         banana.style.top = top_jungle;
     }
     if((parseInt(trash.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash.style.left) + 70) && (parseInt(trash.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash.style.top) + 70) ){
-        alert('GAME OVER')
+        //alert('GAME OVER')
         score = 0;
         banana4.style.left = random_x() + 'px'
         banana4_int_top = parseInt(top_jungle);
@@ -229,7 +229,7 @@ function add_items_10(){
             banana2.style.top = top_jungle;
         }
         if((parseInt(trash2.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash2.style.left) + 70) && (parseInt(trash2.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash2.style.top) + 70) ){
-            alert('GAME OVER')
+            //alert('GAME OVER')
             score = 0;
             
             banana4.style.left = random_x() + 'px'
@@ -317,7 +317,7 @@ function add_items_20(){
             banana3.style.top = top_jungle;
         }
         if((parseInt(trash3.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash3.style.left) + 70) && (parseInt(trash3.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash3.style.top) + 70) ){
-            alert('GAME OVER')
+            //alert('GAME OVER')
             score = 0;
             
             banana4.style.left = random_x() + 'px'
@@ -411,7 +411,7 @@ function add_items_30(){
             banana4.style.top = top_jungle;
         }
         if((parseInt(trash4.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(trash4.style.left) + 70) && (parseInt(trash4.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(trash4.style.top) + 70) ){
-            alert('GAME OVER')
+            //alert('GAME OVER')
             score = 0;
             banana4.style.left = random_x() + 'px'
             banana4_int_top = 200
