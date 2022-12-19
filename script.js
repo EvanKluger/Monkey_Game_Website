@@ -289,7 +289,7 @@ function add_items_10(){
 }
 
 function add_items_15(){
-    if(score == 15 || score == 30){
+    if(score == 15 || score == 30 ||score == 23 || score == 37){
         red_banana.style.height = '100px';
         red_banana.style.width = '100px';
     
