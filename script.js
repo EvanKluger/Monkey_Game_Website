@@ -289,9 +289,9 @@ function add_items_10(){
 }
 
 function add_items_15(){
-    if(score % 15 == 0){
-        red_banana.style.height = '70px';
-        red_banana.style.width = '70px';
+    if(score == 15 || score == 30){
+        red_banana.style.height = '100px';
+        red_banana.style.width = '100px';
     
         if(red_banana_int_top < (bottom_jungle)){
             red_banana.style.top = parseInt(red_banana.style.top) + step + 'px';
