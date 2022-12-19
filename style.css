@@ -207,37 +207,37 @@ h3{
     }    
     .button{
         position: absolute;
-        height: 30px;
-        width: 30px;
+        height: 70px;
+        width: 70px;
         z-index: 2;
         top: 500px;
-        left: 200px;
+        left: 300px;
     }
     
     .button2{
         position: absolute;
-        height: 30px;
-        width: 30px;
+        height: 70px;
+        width: 70px;
         z-index: 2;
         top: 500px;
-        left: 150px;
+        left: 100px;
     }
     .Larrow{
         position: absolute;
-        height: 35px;
-        width: 35px;
+        height: 75px;
+        width: 75px;
         z-index: 3;
         top: 500px;
-        left: 150px;
+        left: 300px;
     }
     
     .Rarrow{
         position: absolute;
-        height: 35px;
-        width: 35px;
+        height: 75px;
+        width: 75px;
         z-index: 3;
         top: 500px;
-        left: 200px;
+        left: 100px;
     }
 
 
