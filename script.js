@@ -294,10 +294,11 @@ function add_items_15(){
     if(score == 15 || score == 30 ||score == 23 || score == 37){
         red_banana.style.height = '100px';
         red_banana.style.width = '100px';
+        red_step = step + step;
     
         if(red_banana_int_top < (bottom_jungle)){
-            red_banana.style.top = parseInt(red_banana.style.top) + (2*step) + 'px';
-            red_banana_int_top = red_banana_int_top + (2*step);
+            red_banana.style.top = parseInt(red_banana.style.top) + red_step + 'px';
+            red_banana_int_top = red_banana_int_top + red_step;
         }
         
         if(red_banana_int_top >= (bottom_jungle)){
