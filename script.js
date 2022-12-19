@@ -297,7 +297,7 @@ function add_items_15(){
     
         if(red_banana_int_top < (bottom_jungle)){
             red_banana.style.top = parseInt(red_banana.style.top) + (2*step) + 'px';
-            red_banana_int_top = red_banana_int_top + step;
+            red_banana_int_top = red_banana_int_top + (2*step);
         }
         
         if(red_banana_int_top >= (bottom_jungle)){
