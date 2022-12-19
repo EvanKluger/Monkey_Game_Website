@@ -289,7 +289,7 @@ function add_items_10(){
 }
 
 function add_item_15(){
-    if(16 > score && score > 14){
+    if(16 < score && score > 14){
         red_banana.style.height = '70px';
         red_banana.style.width = '70px';
     
@@ -303,10 +303,10 @@ function add_item_15(){
         red_banana_int_top = 200
         red_banana.style.top = top_jungle;
         }
+
         if((parseInt(red_banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(red_banana.style.left) + 70) && (parseInt(red_banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(red_banana.style.top) + 70) ){
             score = score + 10;
-            count_speed = count_speed + 1;
-
+            moveBy = moveBy + 10;
             red_banana.style.left = random_x() + 'px'
             red_banana_int_top = 200
             red_banana.style.top = top_jungle;
