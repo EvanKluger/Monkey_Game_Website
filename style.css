@@ -121,3 +121,17 @@ h3{
     font-size: 20px;
     margin-bottom: 10%;
 }
+
+@media (max-width: 550px){
+
+    .Jungle{
+        background-color: rgb(204, 255, 255);
+        justify-content: center;
+        align-items: center;
+        margin-left: 12.5%;
+        height: 35vh;
+        width: 75vw;
+        z-index: 1;
+        }
+
+}
