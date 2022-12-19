@@ -302,6 +302,8 @@ function add_items_15(){
         red_banana.style.left = random_x() + 'px'
         red_banana_int_top = 200
         red_banana.style.top = top_jungle;
+        red_banana.style.height = '0px';
+        red_banana.style.width = '0px';
         }
 
         if((parseInt(red_banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(red_banana.style.left) + 70) && (parseInt(red_banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(red_banana.style.top) + 70) ){
