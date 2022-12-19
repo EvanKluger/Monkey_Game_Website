@@ -63,7 +63,6 @@ if(type == 2){
 }
 
 
-
 var jungle_width = jungle.offsetWidth + "px";
 var jungle_height = jungle.offsetHeight + 'px';
 
