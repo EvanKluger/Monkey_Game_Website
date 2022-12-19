@@ -288,8 +288,8 @@ function add_items_10(){
 
 }
 
-function add_item_15(){
-    if(score>0){
+function add_items_15(){
+    if(score % 15 == 0){
         red_banana.style.height = '70px';
         red_banana.style.width = '70px';
     
