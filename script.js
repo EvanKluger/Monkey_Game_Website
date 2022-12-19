@@ -17,6 +17,9 @@ var trash3 = document.querySelector('.Trash3');
 var banana4 = document.querySelector('.Banana4');
 var trash4 = document.querySelector('.Trash4');
 
+var red_banana = document.querySelector('.R_Banana');
+
+
 let score = 0;
 let moveBy = 35;
 let step = 4;
@@ -65,6 +68,10 @@ let banana4_int_top = parseInt(top_jungle);
 trash4.style.left = random_x() + 'px';
 trash4.style.top = top_jungle;
 let trash4_int_top = parseInt(top_jungle);
+
+red_banana.style.left = random_x() + 'px';
+red_banana.style.top = top_jungle;
+let red_banana_int_top = parseInt(top_jungle);
 
 
 //FUNCTION THAT RETURN A RANDOM X POSITION
@@ -280,6 +287,35 @@ function add_items_10(){
     }
 
 }
+
+function add_item_15(){
+    if(16 > score > 14){
+        red_banana.style.height = '70px';
+        red_banana.style.width = '70px';
+    
+        if(red_banana_int_top < (bottom_jungle)){
+            red_banana.style.top = parseInt(red_banana.style.top) + step + 'px';
+            red_banana_int_top = red_banana_int_top + step;
+        }
+        
+        if(red_banana_int_top >= (bottom_jungle)){
+        red_banana.style.left = random_x() + 'px'
+        red_banana_int_top = 200
+        red_banana.style.top = top_jungle;
+        }
+        if((parseInt(red_banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(red_banana.style.left) + 70) && (parseInt(red_banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(red_banana.style.top) + 70) ){
+            score = score + 10;
+            count_speed = count_speed + 1;
+            
+            red_banana.style.left = random_x() + 'px'
+            red_banana_int_top = 200
+            red_banana.style.top = top_jungle;
+        }
+    }
+}
+
+
+
 //FUNCTION THAT ADDS ANOTHER PAIR OF BANANA AND TRASH AT SCORE > 19
 function add_items_20(){
     if(score > 19){
@@ -372,8 +408,6 @@ function add_items_20(){
     }
 
 }
-
-
 
 function add_items_30(){
     if(score > 29){
