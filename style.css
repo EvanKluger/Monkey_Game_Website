@@ -134,6 +134,19 @@ h3{
     width: 0px;
     z-index: 2;
 }
+.Larrow{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    z-index: 2;
+}
+
+.Rarrow{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    z-index: 2;
+}
 
 @media (max-width: 550px){
 
@@ -197,6 +210,8 @@ h3{
         height: 30px;
         width: 30px;
         z-index: 2;
+        top: 500px;
+        left: 200px;
     }
     
     .button2{
@@ -204,6 +219,25 @@ h3{
         height: 30px;
         width: 30px;
         z-index: 2;
+        top: 500px;
+        left: 150px;
+    }
+    .Larrow{
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        z-index: 2;
+        top: 500px;
+        left: 150px;
+    }
+    
+    .Rarrow{
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        z-index: 2;
+        top: 500px;
+        left: 200px;
     }
 
 
