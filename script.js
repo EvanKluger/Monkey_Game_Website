@@ -601,6 +601,7 @@ function end(){
 
 //FUNCTION THAT CONTROLS THE START GAME BUTTON
 function start_game(){
+    end();
     score = 0;
     interval = setInterval(function() {
         setTimeout(game(), 1);
