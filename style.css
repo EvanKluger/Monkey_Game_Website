@@ -115,6 +115,24 @@
     z-index: 2;
 }
 
+.Larrow{
+    position: absolute;
+    top: 750px;
+    margin-left: 45%;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
+.Larrow{
+    position: absolute;
+    margin-left: 55%;
+    top: 750px;
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+}
+
 
 
 h3{
