@@ -7,7 +7,7 @@
 
 //Desktop vs Mobile
 let type = 0;
-var width = window.innerWidth;
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 if (width > 550) {
  //desktop
 type = 1;
