@@ -311,6 +311,7 @@ function add_items_15(){
         if((parseInt(red_banana.style.left) - 70 < parseInt(monkey.style.left)) && (parseInt(monkey.style.left) < parseInt(red_banana.style.left) + 70) && (parseInt(red_banana.style.top) - 70 < parseInt(monkey.style.top)) && (parseInt(monkey.style.top) < parseInt(red_banana.style.top) + 70) ){
             score = score + 10;
             moveBy = moveBy + 10;
+            step = step + 2;
             red_banana.style.left = random_x() + 'px'
             red_banana_int_top = 200
             red_banana.style.top = top_jungle;
