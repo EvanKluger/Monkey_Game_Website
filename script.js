@@ -12,9 +12,9 @@ if (width > 550) {
  //desktop
 type = 1;
 } 
-else {
-    //mobile 
-  type = 2
+if(width<551){
+//mobile 
+type = 2
 }
 
 
@@ -51,10 +51,12 @@ let count_items = 0;
 
 let reg_height = 0;
 let r_banana_height = 0;
+
 if(type == 1){
     reg_height = 70; 
     r_banana_height = 100;
 }
+
 if(type == 2){
     reg_height = 10; 
     r_banana_height = 12;
