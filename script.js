@@ -279,6 +279,8 @@ function add_items_10(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
+            red_banana.style.height = '0px';
+            red_banana.style.width = '0px';
             step = 4;
             moveBy = 35;
             count_speed = 0;
@@ -398,6 +400,8 @@ function add_items_20(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
+            red_banana.style.height = '0px';
+            red_banana.style.width = '0px';
             step = 4;
             moveBy = 35;
             count_speed = 0;
@@ -487,6 +491,8 @@ function add_items_30(){
             banana2.style.width = '0px';
             banana3.style.height = '0px'; 
             banana3.style.width = '0px';
+            red_banana.style.height = '0px';
+            red_banana.style.width = '0px';
             step = 4;
             moveBy = 35;
             count_speed = 0;
@@ -546,6 +552,8 @@ function end(){
     banana2.style.width = '0px';
     banana3.style.height = '0px'; 
     banana3.style.width = '0px';
+    red_banana.style.height = '0px';
+    red_banana.style.width = '0px';
     step = 4;
     moveBy = 35;
     count_speed = 0;
