@@ -6,10 +6,10 @@
 
 
 //Desktop vs Mobile
-let type = 0;
+let type = 1;
 
-const mq = window.matchMedia( "(min-width: 550px)" );
-if (mq.matches) {
+var width = window.innerWidth;
+if (width > 550) {
  //desktop
 type = 1;
 } 
