@@ -6,7 +6,7 @@
 
 
 //Desktop vs Mobile
-let type = 1;
+let type = 0;
 
 const mq = window.matchMedia( "(min-width: 550px)" );
 if (mq.matches) {
