@@ -238,7 +238,7 @@ h3{
     
     .button{
         position: absolute;
-        top: 1000px;
+        margin-top: 30%;
         margin-left: 45%;
         height: 30px;
         width: 30px;
@@ -248,7 +248,7 @@ h3{
     .button2{
         position: absolute;
         margin-left: 55%;
-        top: 1000px;
+        margin-top: 30%;
         height: 30px;
         width: 30px;
         z-index: 2;
