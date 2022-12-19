@@ -200,7 +200,7 @@ h3{
 
     .Larrow{
         position: absolute;
-        top: 750px;
+        top: 1000px;
         margin-left: 45%;
         height: 30px;
         width: 0px;
@@ -210,7 +210,7 @@ h3{
     .Rarrow{
         position: absolute;
         margin-left: 55%;
-        top: 750px;
+        top: 1000px;
         height: 30px;
         width: 0px;
         z-index: 2;
