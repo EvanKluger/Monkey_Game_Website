@@ -6,7 +6,7 @@
 
 
 //Desktop vs Mobile
-let type = 1;
+let type = 0;
 
 var width = window.innerWidth;
 if (width > 550) {
@@ -56,7 +56,6 @@ if(type == 1){
     reg_height = 70; 
     r_banana_height = 100;
 }
-
 if(type == 2){
     reg_height = 10; 
     r_banana_height = 12;
