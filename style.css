@@ -228,7 +228,7 @@ h3{
         width: 75px;
         z-index: 3;
         top: 500px;
-        margin-left: 15%;
+        left: 100px;
     }
     
     .Rarrow{
@@ -237,7 +237,7 @@ h3{
         width: 75px;
         z-index: 3;
         top: 500px;
-        margin-right: 15%;
+        left: 265px;
     }
 
 
