@@ -10,9 +10,10 @@ let type = 0;
 
 const mq = window.matchMedia( "(min-width: 550px)" );
 if (mq.matches) {
-  //desktop
-    type = 1;
-} else {
+ //desktop
+type = 1;
+} 
+else {
     //mobile 
   type = 2
 }
