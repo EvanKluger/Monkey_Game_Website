@@ -316,6 +316,11 @@ function add_items_15(){
             red_banana.style.top = top_jungle;
         }
     }
+    else{
+    red_banana.style.height = '0px';
+    red_banana.style.width = '0px';
+
+    }
 }
 
 //FUNCTION THAT ADDS ANOTHER PAIR OF BANANA AND TRASH AT SCORE > 19
