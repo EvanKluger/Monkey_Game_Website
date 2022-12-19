@@ -124,14 +124,11 @@ h3{
 
 @media (max-width: 550px){
 
-        
     .title {
         color: white;
         text-align: center;
         font-size: 13px;
         margin-top: 1%;
-
-        
     }
 
     .display {
