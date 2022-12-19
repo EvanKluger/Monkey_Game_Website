@@ -17,7 +17,7 @@ var trash3 = document.querySelector('.Trash3');
 var banana4 = document.querySelector('.Banana4');
 var trash4 = document.querySelector('.Trash4');
 
-var red_banana = document.querySelector('.R_Banana');
+var red_banana = document.querySelector('.RBanana');
 
 
 let score = 0;
