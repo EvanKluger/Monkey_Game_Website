@@ -58,8 +58,8 @@ if(type == 1){
 }
 
 if(type == 2){
-    reg_height = 10; 
-    r_banana_height = 12;
+    reg_height = 35; 
+    r_banana_height = 40;
 }
 
 
