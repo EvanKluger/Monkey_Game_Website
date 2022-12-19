@@ -224,8 +224,8 @@ h3{
     }
     .Larrow{
         position: absolute;
-        height: 26px;
-        width: 26px;
+        height: 35px;
+        width: 35px;
         z-index: 2;
         top: 500px;
         left: 150px;
@@ -233,8 +233,8 @@ h3{
     
     .Rarrow{
         position: absolute;
-        height: 26px;
-        width: 26px;
+        height: 35px;
+        width: 35x;
         z-index: 2;
         top: 500px;
         left: 200px;
